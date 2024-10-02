@@ -1,2 +1,1 @@
-# Rogers_batgut_20XX
-# Rogers_batgut_20XX
+# Bat gut microbiome: Characterizing the gut microbiome of bats
