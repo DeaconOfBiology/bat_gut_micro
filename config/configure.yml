@@ -1,0 +1,18 @@
+ROOT: "."
+Samples:
+    Sample_A: NBS1051F-30-542494038
+    Sample_B: NBS1051F
+    Sample_C: NBS1079E-30-542494038
+    Sample_D: NBS1079E-30-550131958
+    Sample_E: 080613-8-pd 
+    Sample_F: 080813-19-pd
+    Sample_G: 080813-7-mc
+    Sample_H: 080913-2-mc
+    Sample_I: 080913-7-ph
+#Log file pathway
+logs: "../workflow/logs/"
+
+#Data processing pathways
+temp_files: "../data/tmp/"
+raw_reads: "../data/raw/shotgun/"
+clean_reads: "../data/processed/clean_reads/"
