@@ -1,2 +1,6 @@
-data/
+data/processed/
+data/retrieved/
+data/temp/
+data/raw/
+data/references/sequences/
 exploratory/
