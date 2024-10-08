@@ -1,0 +1,34 @@
+#!/bin/bash
+#SBATCH --partition=Nebula
+#SBATCH --job-name=bat_quano
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=10
+#SBATCH --mem=240gb
+#SBATCH --time=01-00:00:00
+
+#SBATCH --error=../slurm/%x_%j.err
+#SBATCH --output=../slurm/%x_%j.out
+
+################################################################
+# author: TJ Rogers                                            #
+#                                                              #
+# Running snakemkake workflow.                                 #
+################################################################
+#### Load modules:
+module purge
+module load mambaforge/4.14
+
+#### Activate snakemake environment:
+mamba activate snakemake8
+
+#### Change into working directory:
+cd ../../workflow
+
+#### Create workflow dag:
+snakemake --dag all | dot -Tsvg > report/dag.svg 
+
+#### Create workflow report:
+snakemake all --dry-run --printshellcmds
+
+#### Run workflow:
+

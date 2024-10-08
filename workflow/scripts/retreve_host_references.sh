@@ -14,8 +14,22 @@
 # This code block dowloads the genomes for representative #
 # sequences using the datasets program.                   #
 ###########################################################
-# datasets download genome accession --inputfile snakemake_input[accessions] \
-#     --include gff3,rna,cds,protein,genome,seq-report
+#### Calling in input and output from the rule doc:
+input=(${snakemake_input[accessions]})
+output=(${snakemake_output[ncbi_zip]})
 
-datasets download genome accession --inputfile /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt \
-    --include gff3,rna,cds,protein,genome,seq-report
+#### Running datasets to retrieve sequences
+datasets download genome accession --inputfile "$input" \
+    --include gff3,rna,cds,protein,genome,seq-report \
+    --filename "$output"
+
+
+
+
+##########################################################
+# This code chunk was originally used to test the script #
+##########################################################
+# datasets download genome accession --inputfile /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/test_bat_host_accessions.txt \
+#     --include gff3,rna,cds,protein,genome,seq-report --filename /projects/raw_lab/projects/Bats/bat_gut_micro/test/bat_references.zip
+
+# unzip /projects/raw_lab/projects/Bats/bat_gut_micro/test/bat_references.zip /projects/raw_lab/projects/Bats/bat_gut_micro/test/

@@ -1,9 +1,6 @@
-name: guano
+name: snakemake8
 channels:
   - conda-forge
-  - base
   - bioconda
-  - R
 dependencies:
-  - r-base
-  - r-tidyverse
+  - snakemake=8.20.6 

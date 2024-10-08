@@ -1,19 +1,25 @@
 ROOT: "."
 Samples:
-    Sample_A: NBS1051F-30-542494038
-    Sample_B: NBS1051F
-    Sample_C: NBS1079E-30-542494038
-    Sample_D: NBS1079E-30-550131958
-    Sample_E: 080613-8-pd 
-    Sample_F: 080813-19-pd
-    Sample_G: 080813-7-mc
-    Sample_H: 080913-2-mc
-    Sample_I: 080913-7-ph
+    - "NBS1051F-30-542494038"
+    - "NBS1051F"
+    - "NBS1079E-30-542494038"
+    - "NBS1079E-30-550131958"
+    - "080613-8-pd" 
+    - "080813-19-pd"
+    - "080813-7-mc"
+    - "080913-2-mc"
+    - "080913-7-ph"
 #Log file pathway
-logs: "../workflow/logs/"
+logs: "/projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/"
 
 #Data processing pathways
-temp_files: "../data/tmp/"
-raw_reads: "../data/raw/shotgun/"
-clean_reads: "../data/processed/clean_reads/"
-references: "../data/references/"
+temp_files: "/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/"
+raw_reads: "/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/"
+clean_reads: "/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/"
+references: "/projects/raw_lab/projects/Bats/bat_gut_micro/data/references/"
+
+#yaml locations
+envs: "/projects/raw_lab/projects/Bats/bat_gut_micro/workflow/envs/"
+
+#scripts
+scr: "/projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/"
