@@ -1,0 +1,116 @@
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 15
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+clean_raw_reads            9              5              5
+get_host_references        1              5              5
+total                     11              1              5
+
+Select jobs to execute...
+
+[Tue Oct  8 11:57:26 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080613-8-pd-sg
+    jobid: 5
+    wildcards: sample=080613-8-pd
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+
+[Tue Oct  8 11:57:26 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080813-7-mc-sg
+    jobid: 7
+    wildcards: sample=080813-7-mc
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+
+[Tue Oct  8 11:57:26 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080913-2-mc-sg
+    jobid: 8
+    wildcards: sample=080913-2-mc
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+Version 39.09
+
+
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+
+maskMiddle was disabled because useShortKmers=true
+maskMiddle was disabled because useShortKmers=true
+maskMiddle was disabled because useShortKmers=true
+0.110 seconds.
+0.110 seconds.
+0.111 seconds.
+Initial:
+Initial:
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+
+
+Added 5293385 kmers; time: 	1.598 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Added 5293385 kmers; time: 	1.670 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Added 5293385 kmers; time: 	1.673 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Input is being processed as paired
+Input is being processed as paired
+Input is being processed as paired
+Started output streams:	0.329 seconds.
+Started output streams:	0.327 seconds.
+Started output streams:	0.418 seconds.
+Processing time:   		3875.965 seconds.
+
+Input:                  	408279728 reads 		61241959200 bases.
+KTrimmed:               	15272744 reads (3.74%) 	351907278 bases (0.57%)
+Trimmed by overlap:     	3393348 reads (0.83%) 	45775036 bases (0.07%)
+Total Removed:          	14256 reads (0.00%) 	397682314 bases (0.65%)
+Result:                 	408265472 reads (100.00%) 	60844276886 bases (99.35%)
+
+Time:                         	3877.983 seconds.
+Reads Processed:        408m 	105.28k reads/sec
+Bases Processed:      61241m 	15.79m bases/sec
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz k=27 hdist=1 qtrim=rl trimq=17 cardinality=t mingc=0.05 maxgc=0.95
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz, k=27, hdist=1, qtrim=rl, trimq=17, cardinality=t, mingc=0.05, maxgc=0.95]
+Version 39.09
+
+0.067 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 423440 kmers; time: 	0.087 seconds.
+Memory: max=1073m, total=1073m, free=1038m, used=35m
+
+Input is being processed as paired
+Started output streams:	0.044 seconds.

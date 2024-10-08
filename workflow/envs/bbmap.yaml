@@ -2,4 +2,4 @@ name: bbmap
 channels:
   - bioconda
 dependencies:
-  - bbmap==39.10
+  - bbmap==39.09

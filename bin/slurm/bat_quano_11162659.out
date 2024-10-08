@@ -1,0 +1,154 @@
+Building DAG of jobs...
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+clean_raw_reads            9              1              1
+get_host_references        1              1              1
+total                     11              1              1
+
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_NBS1051F-sg
+    jobid: 2
+    wildcards: sample=NBS1051F
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-550131958-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-550131958-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-550131958-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-550131958-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_NBS1079E-30-550131958-sg
+    jobid: 4
+    wildcards: sample=NBS1079E-30-550131958
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-550131958-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-550131958-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-550131958-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-550131958-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-550131958-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-550131958-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080813-19-pd-sg
+    jobid: 6
+    wildcards: sample=080813-19-pd
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-30-542494038-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_NBS1051F-30-542494038-sg
+    jobid: 1
+    wildcards: sample=NBS1051F-30-542494038
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-30-542494038-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-30-542494038-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080913-2-mc-sg
+    jobid: 8
+    wildcards: sample=080913-2-mc
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule get_host_references:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs
+    jobid: 10
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/retreve_host_references.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-542494038-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-542494038-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-542494038-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-542494038-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_NBS1079E-30-542494038-sg
+    jobid: 3
+    wildcards: sample=NBS1079E-30-542494038
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-542494038-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-542494038-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-542494038-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-542494038-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-542494038-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-542494038-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080613-8-pd-sg
+    jobid: 5
+    wildcards: sample=080613-8-pd
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080613-8-pd-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080813-7-mc-sg
+    jobid: 7
+    wildcards: sample=080813-7-mc
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-7-mc-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080913-7-ph-sg
+    jobid: 9
+    wildcards: sample=080913-7-ph
+    resources: tmpdir=/tmp
+
+
+            bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_2.fastq.gz 
+        
+
+[Tue Oct  8 11:57:25 2024]
+localrule all:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+    jobid: 0
+    resources: tmpdir=/tmp
+
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+clean_raw_reads            9              1              1
+get_host_references        1              1              1
+total                     11              1              1
+
+This was a dry-run (flag -n). The order of jobs does not reflect the order of execution.

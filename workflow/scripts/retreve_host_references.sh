@@ -15,13 +15,12 @@
 # sequences using the datasets program.                   #
 ###########################################################
 #### Calling in input and output from the rule doc:
-input=(${snakemake_input[accessions]})
-output=(${snakemake_output[ncbi_zip]})
+
 
 #### Running datasets to retrieve sequences
-datasets download genome accession --inputfile "$input" \
+datasets download genome accession --inputfile $1 \
     --include gff3,rna,cds,protein,genome,seq-report \
-    --filename "$output"
+    --filename $2
 
 
 

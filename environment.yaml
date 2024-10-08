@@ -1,6 +1,6 @@
-name: snakemake8
+name: snakemake
 channels:
   - conda-forge
   - bioconda
 dependencies:
-  - snakemake=8.20.6 
+  - snakemake
