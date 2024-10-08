@@ -1,0 +1,50 @@
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 15
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+clean_raw_reads            7              5              5
+get_host_references        1              5              5
+total                      9              1              5
+
+Select jobs to execute...
+
+[Tue Oct  8 15:16:49 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080913-2-mc-sg.log
+    jobid: 8
+    wildcards: sample=080913-2-mc
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+
+[Tue Oct  8 15:16:49 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080813-19-pd-sg.log
+    jobid: 6
+    wildcards: sample=080813-19-pd
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+
+[Tue Oct  8 15:16:50 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080913-7-ph-sg.log
+    jobid: 9
+    wildcards: sample=080913-7-ph
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89

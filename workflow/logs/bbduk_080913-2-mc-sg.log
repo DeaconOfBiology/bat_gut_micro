@@ -1,0 +1,14 @@
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-2-mc-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+
+maskMiddle was disabled because useShortKmers=true
+0.260 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 5293385 kmers; time: 	1.244 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Input is being processed as paired
+Started output streams:	0.264 seconds.

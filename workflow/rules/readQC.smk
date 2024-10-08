@@ -17,14 +17,14 @@ rule clean_raw_reads:
         fr2=config["temp_files"] + "{sample}-sg_2.fastq.gz"
     threads: 5
     log: 
-        config["logs"] + "bbduk_{sample}-sg"
+        config["logs"] + "bbduk_{sample}-sg.log"
     params:
         script=config["scr"] + "trimming.sh"
     conda:
         config["envs"] + "bbmap.yaml"
     shell:
         """
-            bash {params.script} {input.r1} {input.r2} {output.tr1} {output.tr2} {output.fr1} {output.fr2} 
+            (bash {params.script} {input.r1} {input.r2} {output.tr1} {output.tr2} {output.fr1} {output.fr2} ) 2> {log}
         """
 
 
@@ -35,32 +35,32 @@ rule get_host_references:
         ncbi_zip=config["references"] + "bat_references.zip"
     threads: 5
     log:
-        config["logs"]
+        config["logs"] + "bat_host_accessions.log"
     params:
         script=config["scr"] + "retreve_host_references.sh"
     conda:
         config["envs"] + "ncbi_datasets.yaml"
     shell:
         """
-            bash {params.script} {input.accessions} {output.ncbi_zip}
+            (bash {params.script} {input.accessions} {output.ncbi_zip}) 2> {log}
         """
         
 
-rule remove_host_reads:
-    input:
-        ncbi_zip=config["references"] + "bat_references.zip",
-        r1=config["temp_files"] + "{sample}-sg_1.fastq.gz", 
-        r2=config["temp_files"] + "{sample}-sg_2.fastq.gz"
-    output:
-        r1=config["clean_reads"] + "clean_{sample}-sg_1.fastq.gz", 
-        r2=config["clean_reads"] + "clean_{sample}-sg_2.fastq.gz"
-    threads: 15
-    log:
-     config["logs"] + ""
-    params:
-        script=config[""] + ""
-    conda:
-        config["envs"] + ""
-    shell:
-        """
-        """
+# rule remove_host_reads:
+#     input:
+#         ncbi_zip=config["references"] + "bat_references.zip",
+#         r1=config["temp_files"] + "{sample}-sg_1.fastq.gz", 
+#         r2=config["temp_files"] + "{sample}-sg_2.fastq.gz"
+#     output:
+#         r1=config["clean_reads"] + "clean_{sample}-sg_1.fastq.gz", 
+#         r2=config["clean_reads"] + "clean_{sample}-sg_2.fastq.gz"
+#     threads: 15
+#     log:
+#      config["logs"] + ""
+#     params:
+#         script=config[""] + ""
+#     conda:
+#         config["envs"] + ""
+#     shell:
+#         """
+#         """

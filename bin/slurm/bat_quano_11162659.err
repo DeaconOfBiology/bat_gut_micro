@@ -114,3 +114,266 @@ Memory: max=1073m, total=1073m, free=1038m, used=35m
 
 Input is being processed as paired
 Started output streams:	0.044 seconds.
+Processing time:   		5465.172 seconds.
+
+Input:                  	460608268 reads 		69091240200 bases.
+KTrimmed:               	15760788 reads (3.42%) 	352115248 bases (0.51%)
+Trimmed by overlap:     	2894982 reads (0.63%) 	56236496 bases (0.08%)
+Total Removed:          	30788 reads (0.01%) 	408351744 bases (0.59%)
+Result:                 	460577480 reads (99.99%) 	68682888456 bases (99.41%)
+
+Time:                         	5467.173 seconds.
+Reads Processed:        460m 	84.25k reads/sec
+Bases Processed:      69091m 	12.64m bases/sec
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz k=27 hdist=1 qtrim=rl trimq=17 cardinality=t mingc=0.05 maxgc=0.95
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080613-8-pd-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz, k=27, hdist=1, qtrim=rl, trimq=17, cardinality=t, mingc=0.05, maxgc=0.95]
+Version 39.09
+
+0.041 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 423440 kmers; time: 	0.219 seconds.
+Memory: max=1073m, total=1073m, free=1038m, used=35m
+
+Input is being processed as paired
+Started output streams:	0.254 seconds.
+Processing time:   		2673.754 seconds.
+
+Input:                  	408265472 reads 		60844276886 bases.
+Contaminants:           	4 reads (0.00%) 	600 bases (0.00%)
+QTrimmed:               	259597373 reads (63.59%) 	2322419067 bases (3.82%)
+Filtered by GC:         	1310 reads (0.00%) 	192058 bases (0.00%)
+Total Removed:          	2536260 reads (0.62%) 	2322611725 bases (3.82%)
+Result:                 	405729212 reads (99.38%) 	58521665161 bases (96.18%)
+Unique 31-mers:         	7239148989
+
+Time:                         	2673.923 seconds.
+Reads Processed:        408m 	152.68k reads/sec
+Bases Processed:      60844m 	22.75m bases/sec
+Removing temporary output file /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_1.fastq.gz.
+Removing temporary output file /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-7-mc-sg_2.fastq.gz.
+[Tue Oct  8 13:46:46 2024]
+Finished job 7.
+1 of 11 steps (9%) done
+Select jobs to execute...
+
+[Tue Oct  8 13:46:46 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080813-19-pd-sg
+    jobid: 6
+    wildcards: sample=080813-19-pd
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080813-19-pd-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+
+maskMiddle was disabled because useShortKmers=true
+0.055 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 5293385 kmers; time: 	0.987 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Input is being processed as paired
+Started output streams:	0.071 seconds.
+Processing time:   		1652.276 seconds.
+
+Input:                  	460577480 reads 		68682888456 bases.
+Contaminants:           	18 reads (0.00%) 	2700 bases (0.00%)
+QTrimmed:               	293005352 reads (63.62%) 	3041926201 bases (4.43%)
+Filtered by GC:         	2550 reads (0.00%) 	377740 bases (0.00%)
+Total Removed:          	3342312 reads (0.73%) 	3042306641 bases (4.43%)
+Result:                 	457235168 reads (99.27%) 	65640581815 bases (95.57%)
+Unique 31-mers:         	10751343444
+
+Time:                         	1652.755 seconds.
+Reads Processed:        460m 	278.67k reads/sec
+Bases Processed:      68682m 	41.56m bases/sec
+Removing temporary output file /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_1.fastq.gz.
+Removing temporary output file /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080613-8-pd-sg_2.fastq.gz.
+[Tue Oct  8 13:56:16 2024]
+Finished job 5.
+2 of 11 steps (18%) done
+Select jobs to execute...
+
+[Tue Oct  8 13:56:16 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_080913-7-ph-sg
+    jobid: 9
+    wildcards: sample=080913-7-ph
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+
+maskMiddle was disabled because useShortKmers=true
+0.040 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 5293385 kmers; time: 	1.033 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Input is being processed as paired
+Started output streams:	0.057 seconds.
+Processing time:   		9132.108 seconds.
+
+Input:                  	757401574 reads 		113610236100 bases.
+KTrimmed:               	28562132 reads (3.77%) 	591792086 bases (0.52%)
+Trimmed by overlap:     	3607282 reads (0.48%) 	26797300 bases (0.02%)
+Total Removed:          	83848 reads (0.01%) 	618589386 bases (0.54%)
+Result:                 	757317726 reads (99.99%) 	112991646714 bases (99.46%)
+
+Time:                         	9134.111 seconds.
+Reads Processed:        757m 	82.92k reads/sec
+Bases Processed:        113b 	12.44m bases/sec
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 9 of /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/rules/readQC.smk:
+Job Missing files after 5 seconds:
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 8 completed successfully, but some output files are missing. 8
+Removing output files of failed job clean_raw_reads since they might be corrupted:
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz
+Processing time:   		2108.718 seconds.
+
+Input:                  	229032402 reads 		34354860300 bases.
+KTrimmed:               	5507616 reads (2.40%) 	150449646 bases (0.44%)
+Trimmed by overlap:     	1020 reads (0.00%) 	82496 bases (0.00%)
+Total Removed:          	33244 reads (0.01%) 	150532142 bases (0.44%)
+Result:                 	228999158 reads (99.99%) 	34204328158 bases (99.56%)
+
+Time:                         	2109.810 seconds.
+Reads Processed:        229m 	108.56k reads/sec
+Bases Processed:      34354m 	16.28m bases/sec
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz k=27 hdist=1 qtrim=rl trimq=17 cardinality=t mingc=0.05 maxgc=0.95
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-7-ph-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz, k=27, hdist=1, qtrim=rl, trimq=17, cardinality=t, mingc=0.05, maxgc=0.95]
+Version 39.09
+
+0.020 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 423440 kmers; time: 	0.088 seconds.
+Memory: max=1073m, total=1073m, free=1038m, used=35m
+
+Input is being processed as paired
+Started output streams:	0.067 seconds.
+Processing time:   		477.049 seconds.
+
+Input:                  	228999158 reads 		34204328158 bases.
+Contaminants:           	0 reads (0.00%) 	0 bases (0.00%)
+QTrimmed:               	168380440 reads (73.53%) 	2901348328 bases (8.48%)
+Filtered by GC:         	15674 reads (0.01%) 	2313170 bases (0.01%)
+Total Removed:          	2370854 reads (1.04%) 	2903661498 bases (8.49%)
+Result:                 	226628304 reads (98.96%) 	31300666660 bases (91.51%)
+Unique 31-mers:         	2362439185
+
+Time:                         	477.210 seconds.
+Reads Processed:        228m 	479.87k reads/sec
+Bases Processed:      34204m 	71.68m bases/sec
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 9 of /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/rules/readQC.smk:
+Job Missing files after 5 seconds:
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 8 completed successfully, but some output files are missing. 8
+Traceback (most recent call last):
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 493, in check_and_touch_output
+    wait_for_files(
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 824, in wait_for_files
+    raise IOError(
+OSError: Missing files after 5 seconds:
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 529, in _finish_jobs
+    self.get_executor(job).handle_job_success(job)
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 614, in handle_job_success
+    super().handle_job_success(job)
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 265, in handle_job_success
+    job.postprocess(
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1017, in postprocess
+    self.dag.check_and_touch_output(
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 500, in check_and_touch_output
+    raise MissingOutputException(
+snakemake.exceptions.MissingOutputException: Job Missing files after 5 seconds:
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080913-2-mc-sg_2.fastq.gz
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 8 completed successfully, but some output files are missing. 8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 699, in snakemake
+    success = workflow.execute(
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1073, in execute
+    success = self.scheduler.schedule()
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 440, in schedule
+    self._finish_jobs()
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 534, in _finish_jobs
+    self._handle_error(job)
+  File "/users/troger50/.conda/envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 615, in _handle_error
+    self.running.remove(job)
+KeyError: clean_raw_reads
+Processing time:   		3267.644 seconds.
+
+Input:                  	382268178 reads 		57340226700 bases.
+KTrimmed:               	21765020 reads (5.69%) 	512097888 bases (0.89%)
+Trimmed by overlap:     	9120932 reads (2.39%) 	82110998 bases (0.14%)
+Total Removed:          	30144 reads (0.01%) 	594208886 bases (1.04%)
+Result:                 	382238034 reads (99.99%) 	56746017814 bases (98.96%)
+
+Time:                         	3268.703 seconds.
+Reads Processed:        382m 	116.95k reads/sec
+Bases Processed:      57340m 	17.54m bases/sec
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz k=27 hdist=1 qtrim=rl trimq=17 cardinality=t mingc=0.05 maxgc=0.95
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/080813-19-pd-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz, k=27, hdist=1, qtrim=rl, trimq=17, cardinality=t, mingc=0.05, maxgc=0.95]
+Version 39.09
+
+0.022 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 423440 kmers; time: 	0.059 seconds.
+Memory: max=1073m, total=1073m, free=1038m, used=35m
+
+Input is being processed as paired
+Started output streams:	0.031 seconds.
+Processing time:   		553.844 seconds.
+
+Input:                  	382238034 reads 		56746017814 bases.
+Contaminants:           	10 reads (0.00%) 	1500 bases (0.00%)
+QTrimmed:               	264536495 reads (69.21%) 	2123022088 bases (3.74%)
+Filtered by GC:         	2728 reads (0.00%) 	394904 bases (0.00%)
+Total Removed:          	2014204 reads (0.53%) 	2123418492 bases (3.74%)
+Result:                 	380223830 reads (99.47%) 	54622599322 bases (96.26%)
+Unique 31-mers:         	8390334662
+
+Time:                         	553.939 seconds.
+Reads Processed:        382m 	690.04k reads/sec
+Bases Processed:      56746m 	102.44m bases/sec

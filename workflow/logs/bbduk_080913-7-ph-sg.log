@@ -1,0 +1,40 @@
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+
+maskMiddle was disabled because useShortKmers=true
+0.018 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 5293385 kmers; time: 	0.835 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Input is being processed as paired
+Started output streams:	0.342 seconds.
+Processing time:   		2161.262 seconds.
+
+Input:                  	229032402 reads 		34354860300 bases.
+KTrimmed:               	5507616 reads (2.40%) 	150449646 bases (0.44%)
+Trimmed by overlap:     	1020 reads (0.00%) 	82496 bases (0.00%)
+Total Removed:          	33244 reads (0.01%) 	150532142 bases (0.44%)
+Result:                 	228999158 reads (99.99%) 	34204328158 bases (99.56%)
+
+Time:                         	2162.440 seconds.
+Reads Processed:        229m 	105.91k reads/sec
+Bases Processed:      34354m 	15.89m bases/sec
+/projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/trimming.sh: line 23: intermediate: command not found
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-080913-7-ph-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+
+maskMiddle was disabled because useShortKmers=true
+0.042 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 5293385 kmers; time: 	1.080 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Input is being processed as paired
+Started output streams:	2.708 seconds.
