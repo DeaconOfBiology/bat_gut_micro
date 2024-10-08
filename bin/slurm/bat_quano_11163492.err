@@ -48,3 +48,21 @@ rule clean_raw_reads:
     resources: tmpdir=/tmp
 
 Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
+Removing temporary output file /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_1.fastq.gz.
+Removing temporary output file /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-7-ph-sg_2.fastq.gz.
+[Tue Oct  8 18:39:49 2024]
+Finished job 9.
+1 of 9 steps (11%) done
+Select jobs to execute...
+
+[Tue Oct  8 18:39:49 2024]
+rule clean_raw_reads:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-542494038-sg_R1_001.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1079E-30-542494038-sg_R2_001.fastq.gz
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1079E-30-542494038-sg_2.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-542494038-sg_2.fastq.gz
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bbduk_NBS1079E-30-542494038-sg.log
+    jobid: 3
+    wildcards: sample=NBS1079E-30-542494038
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89
