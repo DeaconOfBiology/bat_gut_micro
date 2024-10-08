@@ -9,6 +9,18 @@ Samples:
     - "080813-7-mc"
     - "080913-2-mc"
     - "080913-7-ph"
+
+hosts:
+    - "GCA_036768555.1"
+    - "GCA_036768555.1"
+    - ""
+    - ""
+    - "GCA_004126475.3"
+    - "GCA_004126475.3"
+    - ""
+    - ""
+    - "GCA_019186645.2"
+
 #Log file pathway
 logs: "/projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/"
 

@@ -1,0 +1,19 @@
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080813-19-pd-sg_2.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-19-pd-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-19-pd-sg_2.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_1.fastq.gz
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_2.fastq.gz
+Intermediate files not found. Running both steps to remove adapter and phiX sequences...
+Intermediate files not found. Running both steps to remove adapter and phiX sequences...
+Intermediate files not found. Running both steps to remove adapter and phiX sequences...

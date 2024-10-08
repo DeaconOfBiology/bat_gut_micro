@@ -3,12 +3,12 @@ Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/d
 Version 39.09
 
 maskMiddle was disabled because useShortKmers=true
-0.260 seconds.
+0.030 seconds.
 Initial:
 Memory: max=1073m, total=1073m, free=1043m, used=30m
 
-Added 5293385 kmers; time: 	1.244 seconds.
+Added 5293385 kmers; time: 	1.218 seconds.
 Memory: max=1073m, total=1073m, free=883m, used=190m
 
 Input is being processed as paired
-Started output streams:	0.264 seconds.
+Started output streams:	0.097 seconds.

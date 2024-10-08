@@ -2,7 +2,7 @@ configfile:"/projects/raw_lab/projects/Bats/bat_gut_micro/config/configure.yml"
 
 rule all:
     input:
-        final_reads=expand([config["temp_files"] + "{sample}-sg_1.fastq.gz", config["temp_files"] + "{sample}-sg_1.fastq.gz"], sample=config["Samples"]),
+        final_reads=expand([config["clean_reads"] + "{sample}-sg_1.fastq.gz", config["clean_reads"] + "{sample}-sg_1.fastq.gz"], sample=config["Samples"]),
         ncbi_zip=config["references"] + "bat_references.zip"
 
 
@@ -13,8 +13,8 @@ rule clean_raw_reads:
     output:
         tr1=temp(config["temp_files"] + "temp_{sample}-sg_1.fastq.gz"),
         tr2=temp(config["temp_files"] + "temp_{sample}-sg_2.fastq.gz"),
-        fr1=config["temp_files"] + "{sample}-sg_1.fastq.gz", 
-        fr2=config["temp_files"] + "{sample}-sg_2.fastq.gz"
+        fr1=config["clean_reads"] + "{sample}-sg_1.fastq.gz", 
+        fr2=config["clean_reads"] + "{sample}-sg_2.fastq.gz"
     threads: 5
     log: 
         config["logs"] + "bbduk_{sample}-sg.log"
@@ -49,18 +49,20 @@ rule get_host_references:
 # rule remove_host_reads:
 #     input:
 #         ncbi_zip=config["references"] + "bat_references.zip",
-#         r1=config["temp_files"] + "{sample}-sg_1.fastq.gz", 
-#         r2=config["temp_files"] + "{sample}-sg_2.fastq.gz"
+#         r1=config["clean_reads"] + "{sample}-sg_1.fastq.gz", 
+#         r2=config["clean_reads"] + "{sample}-sg_2.fastq.gz"
 #     output:
-#         r1=config["clean_reads"] + "clean_{sample}-sg_1.fastq.gz", 
-#         r2=config["clean_reads"] + "clean_{sample}-sg_2.fastq.gz"
+#         r1=config["clean_reads"] + "{sample}-sg_host_removed_2.fastq.gz", 
+#         r2=config["clean_reads"] + "{sample}-sg_host_removed_2.fastq.gz"
 #     threads: 15
 #     log:
 #      config["logs"] + ""
 #     params:
-#         script=config[""] + ""
+#         script=config[""] + "host_read_removal.sh",
+#         host=cofig["references"] + "ncbi_dataset/data/{host}/{host}_mPhyDis1.pri.v3_genomic.fna" #May need to change this ending.
 #     conda:
 #         config["envs"] + ""
 #     shell:
 #         """
+#           (bash {params.script} {input.r1} {input.r2} {output.r1} {output.r2} {params.host})2>{log}
 #         """
