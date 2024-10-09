@@ -49,10 +49,10 @@ rule decompress_references:
     input:
         ncbi_zip=config["references"] + "bat_references.zip"
     output:
-        ncbi_unziped=config["references"] + "ncbi_dataset/data/{{hosts}}/{{hosts}}.fna"
+        ncbi_unziped=expand(config["references"] + "ncbi_dataset/data/{hosts}/{hosts}.fna", hosts=config["hosts"])
     threads:2
     log:
-        config["logs"] + "{{hosts}}_decompress.log"
+        config["logs"] + "bat_host_accessions_decompress.log"
     params:
         config["references"]
     shell:
