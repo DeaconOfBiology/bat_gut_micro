@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+get_host_references        1              1              1
+total                      2              1              1
+
+
+[Wed Oct  9 11:45:42 2024]
+rule get_host_references:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip, /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/ncbi_dataset/data/dataset_catalog.json
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bat_host_accessions.log
+    jobid: 10
+    resources: tmpdir=/tmp
+
+RuleException in line 32 of /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/rules/readQC.smk:
+'OutputFiles' object has no attribute 'ncbi'

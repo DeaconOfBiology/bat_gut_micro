@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+get_host_references        1              1              1
+total                      2              1              1
+
+
+[Wed Oct  9 14:27:43 2024]
+rule get_host_references:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bat_host_accessions.log
+    jobid: 10
+    resources: tmpdir=/tmp
+
+
+            (bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/retreve_host_references.sh /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip) 2> /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bat_host_accessions.log
+        
+
+[Wed Oct  9 14:27:43 2024]
+localrule all:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+    jobid: 0
+    resources: tmpdir=/tmp
+
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+get_host_references        1              1              1
+total                      2              1              1
+
+This was a dry-run (flag -n). The order of jobs does not reflect the order of execution.

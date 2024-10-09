@@ -21,10 +21,7 @@
 datasets download genome accession --inputfile $1 \
     --include gff3,rna,cds,protein,genome,seq-report \
     --filename $2
-
-
-
-
+    
 ##########################################################
 # This code chunk was originally used to test the script #
 ##########################################################

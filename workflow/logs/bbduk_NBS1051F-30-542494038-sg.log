@@ -1,0 +1,51 @@
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R1_001.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R2_001.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa ktrim=r k=21 qin=auto mink=11 hdist=2 tbo tpe
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R1_001.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/raw/shotgun/raw-NBS1051F-30-542494038-sg_R2_001.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/adapters.fa, ktrim=r, k=21, qin=auto, mink=11, hdist=2, tbo, tpe]
+Version 39.09
+
+maskMiddle was disabled because useShortKmers=true
+0.041 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 5293385 kmers; time: 	1.037 seconds.
+Memory: max=1073m, total=1073m, free=883m, used=190m
+
+Input is being processed as paired
+Started output streams:	0.070 seconds.
+Processing time:   		1250.220 seconds.
+
+Input:                  	151651734 reads 		22747760100 bases.
+KTrimmed:               	32782498 reads (21.62%) 	4220918372 bases (18.56%)
+Trimmed by overlap:     	1339592 reads (0.88%) 	9102134 bases (0.04%)
+Total Removed:          	26674390 reads (17.59%) 	4230020506 bases (18.60%)
+Result:                 	124977344 reads (82.41%) 	18517739594 bases (81.40%)
+
+Time:                         	1251.334 seconds.
+Reads Processed:        151m 	121.19k reads/sec
+Bases Processed:      22747m 	18.18m bases/sec
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_1.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_2.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz k=27 hdist=1 qtrim=rl trimq=17 cardinality=t mingc=0.05 maxgc=0.95
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_1.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_NBS1051F-30-542494038-sg_2.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz, k=27, hdist=1, qtrim=rl, trimq=17, cardinality=t, mingc=0.05, maxgc=0.95]
+Version 39.09
+
+0.030 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 423440 kmers; time: 	0.101 seconds.
+Memory: max=1073m, total=1073m, free=1038m, used=35m
+
+Input is being processed as paired
+Started output streams:	0.059 seconds.
+Processing time:   		255.271 seconds.
+
+Input:                  	124977344 reads 		18517739594 bases.
+Contaminants:           	0 reads (0.00%) 	0 bases (0.00%)
+QTrimmed:               	74705538 reads (59.78%) 	1039705298 bases (5.61%)
+Filtered by GC:         	11380 reads (0.01%) 	1539330 bases (0.01%)
+Total Removed:          	1928152 reads (1.54%) 	1041244628 bases (5.62%)
+Result:                 	123049192 reads (98.46%) 	17476494966 bases (94.38%)
+Unique 31-mers:         	860110922
+
+Time:                         	255.436 seconds.
+Reads Processed:        124m 	489.27k reads/sec
+Bases Processed:      18517m 	72.49m bases/sec

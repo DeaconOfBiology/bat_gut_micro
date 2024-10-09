@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+get_host_references        1              5              5
+total                      2              1              5
+
+Select jobs to execute...
+
+[Wed Oct  9 14:27:45 2024]
+rule get_host_references:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bat_host_accessions.log
+    jobid: 10
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/9ee16c57880082178b9cfe87ed28a861
+[Wed Oct  9 14:29:00 2024]
+Finished job 10.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Oct  9 14:29:00 2024]
+localrule all:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1051F-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-542494038-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/NBS1079E-30-550131958-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080613-8-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-19-pd-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080813-7-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-7-ph-sg_1.fastq.gz, /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Wed Oct  9 14:29:00 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/log/2024-10-09T142743.860443.snakemake.log

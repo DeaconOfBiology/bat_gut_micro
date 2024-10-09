@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --partition=Nebula
+#SBATCH --partition=Orion
 #SBATCH --job-name=bat_quano
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=15
-#SBATCH --mem=240gb
+#SBATCH --ntasks-per-node=10
+#SBATCH --mem=200gb
 #SBATCH --time=02-00:00:00
 
 #SBATCH --error=../slurm/%x_%j.err

@@ -1,16 +1,26 @@
 #!/bin/bash
-#SBATCH --partition=Nebula
+#SBATCH --partition=Orion
 #SBATCH --job-name=test_runs
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=10
-#SBATCH --mem=240gb
+#SBATCH --mem=200gb
 #SBATCH --time=01-00:00:00
 
 #SBATCH --error=../slurm/%x_%j.err
 #SBATCH --output=../slurm/%x_%j.out
 
 #Testing script to retrieve host reference genomes:
-module purge
-module load mambaforge/4.14
-mamba activate ncbi_datasets
-bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/retreve_host_references.sh
+# module purge
+# module load mambaforge/4.14
+# mamba activate ncbi_datasets
+# bash /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/scripts/retreve_host_references.sh
+cd /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/
+#Testing unzip for reference sequences
+unzip bat_references.zip 
+
+find ./ -type f -name "GCA_*.fna" | while read file; do
+    dir=$(dirname "$file")  # Get the directory of the file
+    base=$(basename "$file")  # Get the file name
+    newname=$(echo "$base" | cut -d'_' -f1-2).fna  # Extract the desired part of the file name
+    mv "$file" "$dir/$newname"  # Rename the file
+done

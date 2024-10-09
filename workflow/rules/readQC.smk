@@ -3,7 +3,7 @@ configfile:"/projects/raw_lab/projects/Bats/bat_gut_micro/config/configure.yml"
 rule all:
     input:
         final_reads=expand([config["clean_reads"] + "{sample}-sg_1.fastq.gz", config["clean_reads"] + "{sample}-sg_1.fastq.gz"], sample=config["Samples"]),
-        ncbi_zip=config["references"] + "bat_references.zip"
+        ncbi_unziped=expand(config["references"] + "ncbi_dataset/data/{hosts}/{hosts}.fna", hosts=config["hosts"])
 
 
 rule clean_raw_reads:
@@ -45,10 +45,30 @@ rule get_host_references:
             (bash {params.script} {input.accessions} {output.ncbi_zip}) 2> {log}
         """
         
-
+rule decompress_references:
+    input:
+        ncbi_zip=config["references"] + "bat_references.zip"
+    output:
+        ncbi_unziped=config["references"] + "ncbi_dataset/data/{{hosts}}/{{hosts}}.fna"
+    threads:2
+    log:
+        config["logs"] + "{{hosts}}_decompress.log"
+    params:
+        config["references"]
+    shell:
+        """
+            (cd {params}
+            unzip {input.ncbi_zip} 
+            find ./ -type f -name "GCA_*.fna" | while read file; do
+                dir=$(dirname "$file")  # Get the directory of the file
+                base=$(basename "$file")  # Get the file name
+                newname=$(echo "$base" | cut -d'_' -f1-2).fna  # Extract the desired part of the file name
+                mv "$file" "$dir/$newname"  # Rename the file
+            done)2>{log}
+        """
 # rule remove_host_reads:
 #     input:
-#         ncbi_zip=config["references"] + "bat_references.zip",
+#         ncbi_unziped=config["references"] + "ncbi_dataset/data/{hosts}/{hosts}_sequencefile",
 #         r1=config["clean_reads"] + "{sample}-sg_1.fastq.gz", 
 #         r2=config["clean_reads"] + "{sample}-sg_2.fastq.gz"
 #     output:

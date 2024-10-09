@@ -2,7 +2,7 @@ data/processed/
 data/retrieved/
 data/tmp/
 data/raw/
-data/references/sequences/
+data/references/
 exploratory/
 test/
 workflow/.snakemake/

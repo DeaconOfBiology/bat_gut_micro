@@ -12,3 +12,40 @@ Memory: max=1073m, total=1073m, free=883m, used=190m
 
 Input is being processed as paired
 Started output streams:	0.097 seconds.
+Processing time:   		6978.627 seconds.
+
+Input:                  	757401574 reads 		113610236100 bases.
+KTrimmed:               	28562132 reads (3.77%) 	591792086 bases (0.52%)
+Trimmed by overlap:     	3607282 reads (0.48%) 	26797300 bases (0.02%)
+Total Removed:          	83848 reads (0.01%) 	618589386 bases (0.54%)
+Result:                 	757317726 reads (99.99%) 	112991646714 bases (99.46%)
+
+Time:                         	6979.944 seconds.
+Reads Processed:        757m 	108.51k reads/sec
+Bases Processed:        113b 	16.28m bases/sec
+java -ea -Xmx1g -Xms1g -cp /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/1dff3349dd707a6ee427fa7584a84a89/opt/bbmap-39.09-0/current/ jgi.BBDuk -Xmx1g in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_1.fastq.gz out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_2.fastq.gz ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz k=27 hdist=1 qtrim=rl trimq=17 cardinality=t mingc=0.05 maxgc=0.95
+Executing jgi.BBDuk [-Xmx1g, in1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_1.fastq.gz, in2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/tmp/temp_080913-2-mc-sg_2.fastq.gz, out1=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_1.fastq.gz, out2=/projects/raw_lab/projects/Bats/bat_gut_micro/data/processed/clean_reads/080913-2-mc-sg_2.fastq.gz, ref=/users/troger50/.conda/envs/bbmap/share/bbmap/resources/phix174_ill.ref.fa.gz, k=27, hdist=1, qtrim=rl, trimq=17, cardinality=t, mingc=0.05, maxgc=0.95]
+Version 39.09
+
+0.020 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1043m, used=30m
+
+Added 423440 kmers; time: 	0.057 seconds.
+Memory: max=1073m, total=1073m, free=1038m, used=35m
+
+Input is being processed as paired
+Started output streams:	0.051 seconds.
+Processing time:   		3223.481 seconds.
+
+Input:                  	757317726 reads 		112991646714 bases.
+Contaminants:           	10 reads (0.00%) 	1500 bases (0.00%)
+QTrimmed:               	480128283 reads (63.40%) 	4000171708 bases (3.54%)
+Filtered by GC:         	4788 reads (0.00%) 	675692 bases (0.00%)
+Total Removed:          	4355822 reads (0.58%) 	4000848900 bases (3.54%)
+Result:                 	752961904 reads (99.42%) 	108990797814 bases (96.46%)
+Unique 31-mers:         	14530927642
+
+Time:                         	3223.595 seconds.
+Reads Processed:        757m 	234.93k reads/sec
+Bases Processed:        112b 	35.05m bases/sec
