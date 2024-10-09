@@ -51,8 +51,8 @@ rule decompress_references:
     output:
         ncbi_unziped=expand(config["references"] + "ncbi_dataset/data/{hosts}/{hosts}.fna", hosts=config["hosts"])
     threads:2
-    log:
-        config["logs"] + "bat_host_accessions_decompress.log"
+    #log:
+        #config["logs"] + "bat_host_{hosts}_decompress.log"
     params:
         config["references"]
     shell:

@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count    min threads    max threads
+---------------------  -------  -------------  -------------
+all                          1              1              1
+decompress_references        1              2              2
+get_host_references          1              5              5
+total                        3              1              5
+
+Select jobs to execute...
+
+[Wed Oct  9 16:27:32 2024]
+rule get_host_references:
+    input: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_host_accessions.txt
+    output: /projects/raw_lab/projects/Bats/bat_gut_micro/data/references/bat_references.zip
+    log: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/logs/bat_host_accessions.log
+    jobid: 11
+    threads: 5
+    resources: tmpdir=/tmp
+
+Activating conda environment: /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/.snakemake/conda/9ee16c57880082178b9cfe87ed28a861
