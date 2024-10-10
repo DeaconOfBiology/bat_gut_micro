@@ -1,8 +1,24 @@
-data/processed/
-data/retrieved/
-data/tmp/
+####################################################
+# Files to ignore from the bat_gut_micro directory #
+####################################################
 data/raw/
 data/references/
-exploratory/
-test/
-workflow/.snakemake/
+data/retrieved/
+
+############################################
+# Files to ignore in the snakemake project #
+############################################
+snakemake_project/data/processed/
+snakemake_project/data/retrieved/
+snakemake_project/data/tmp/
+snakemake_project/exploratory/
+snakemake_project/test/
+snakemake_project/workflow/.snakemake/
+
+########################################
+# Files to ignore in the Titan project #
+########################################
+titan_project/data/processed/
+titan_project/data/tmp/
+titan_project/exploratory/
+titan_project/test/

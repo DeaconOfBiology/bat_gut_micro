@@ -32,3 +32,6 @@ snakemake all --dry-run --printshellcmds
 
 #### Run workflow:
 snakemake all --cores all --use-conda --scheduler greedy --rerun-incomplete
+
+# If you recieve a notice that directories or files are locked by snakemake, run the below script:
+    #snakemake --unlock --cores all

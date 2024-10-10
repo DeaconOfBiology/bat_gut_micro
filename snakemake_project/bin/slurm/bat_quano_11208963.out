@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in line 3 of /projects/raw_lab/projects/Bats/bat_gut_micro/workflow/rules/readQC.smk:
+Missing input files for rule all:
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/references/ncbi_dataset/data/GCA_028538775.1/GCA_028538775.1.fna
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/references/ncbi_dataset/data/GCA_036768555.1/GCA_036768555.1.fna
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/references/ncbi_dataset/data/GCA_019186645.2/GCA_019186645.2.fna
+/projects/raw_lab/projects/Bats/bat_gut_micro/data/references/ncbi_dataset/data/GCA_004126475.3/GCA_004126475.3.fna

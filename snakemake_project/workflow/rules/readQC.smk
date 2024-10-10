@@ -32,12 +32,14 @@ rule get_host_references:
     input:
         accessions=[config["references"] + "bat_host_accessions.txt"]
     output:
-        ncbi_zip=config["references"] + "bat_references.zip"
+        ncbi_zip=config["references"] + "bat_references.zip",
+        ncbi_unziped=expand(config["references"] + "ncbi_dataset/data/{hosts}/{hosts}.fna", hosts=config["hosts"])
     threads: 5
     log:
         config["logs"] + "bat_host_accessions.log"
     params:
         script=config["scr"] + "retreve_host_references.sh"
+        refdir=config["references"]
     conda:
         config["envs"] + "ncbi_datasets.yaml"
     shell:
@@ -45,27 +47,27 @@ rule get_host_references:
             (bash {params.script} {input.accessions} {output.ncbi_zip}) 2> {log}
         """
         
-rule decompress_references:
-    input:
-        ncbi_zip=config["references"] + "bat_references.zip"
-    output:
-        ncbi_unziped=expand(config["references"] + "ncbi_dataset/data/{hosts}/{hosts}.fna", hosts=config["hosts"])
-    threads:2
-    #log:
-        #config["logs"] + "bat_host_{hosts}_decompress.log"
-    params:
-        config["references"]
-    shell:
-        """
-            (cd {params}
-            unzip {input.ncbi_zip} 
-            find ./ -type f -name "GCA_*.fna" | while read file; do
-                dir=$(dirname "$file")  # Get the directory of the file
-                base=$(basename "$file")  # Get the file name
-                newname=$(echo "$base" | cut -d'_' -f1-2).fna  # Extract the desired part of the file name
-                mv "$file" "$dir/$newname"  # Rename the file
-            done)2>{log}
-        """
+# rule decompress_references:
+#     input:
+#         ncbi_zip=config["references"] + "bat_references.zip"
+#     output:
+#         ncbi_unziped=expand(config["references"] + "ncbi_dataset/data/{hosts}/{hosts}.fna", hosts=config["hosts"])
+#     threads:2
+#     #log:
+#         #config["logs"] + "bat_host_{hosts}_decompress.log"
+#     params:
+#         config["references"]
+#     shell:
+#         """
+#             (cd {params}
+#             unzip {input.ncbi_zip} 
+#             find ./ -type f -name "GCA_*.fna" | while read file; do
+#                 dir=$(dirname "$file")  # Get the directory of the file
+#                 base=$(basename "$file")  # Get the file name
+#                 newname=$(echo "$base" | cut -d'_' -f1-2).fna  # Extract the desired part of the file name
+#                 mv "$file" "$dir/$newname"  # Rename the file
+#             done)2>{log}
+#         """
 # rule remove_host_reads:
 #     input:
 #         ncbi_unziped=config["references"] + "ncbi_dataset/data/{hosts}/{hosts}_sequencefile",
