@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --partition=Orion
+#SBATCH --job-name=Titan_run
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=10
+#SBATCH --mem=200gb
+#SBATCH --time=02-00:00:00
+
+#SBATCH --error=../slurm/%x_%j.err
+#SBATCH --output=../slurm/%x_%j.out
