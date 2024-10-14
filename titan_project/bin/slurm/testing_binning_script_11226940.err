@@ -1,0 +1,11 @@
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.21 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.11 sec
+[main] Version: 0.7.18-r1243-dirty
+[main] CMD: bwa index /projects/raw_lab/projects/Bats/bat_gut_micro/titan_project/data/processed/titan_output/step_06-assemble/FragGeneScan_raw-NBS1051F-sg/assembly/final.contigs.fa
+[main] Real time: 0.414 sec; CPU: 0.343 sec
+
+slurmstepd: error: *** JOB 11226940 ON str-c12 CANCELLED AT 2024-10-14T15:37:05 ***
