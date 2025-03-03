@@ -8,7 +8,8 @@
 # tj_notebook/
 # bin/
 data/
-phasegenome_out/
+phasegenome_out/*
+!phasegenome_out/doc/
 snakemake_project/
 str8_analysis/
 titan_project/
