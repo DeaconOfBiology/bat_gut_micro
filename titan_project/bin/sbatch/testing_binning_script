@@ -3,7 +3,7 @@
 #SBATCH --job-name=testing_binning_script
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=15
-#SBATCH --mem=200gb
+#SBATCH --mem=400gb
 #SBATCH --time=02-00:00:00
 
 #SBATCH --error=../slurm/%x_%j.err
