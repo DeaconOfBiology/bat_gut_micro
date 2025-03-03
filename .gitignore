@@ -10,6 +10,8 @@
 data/
 phasegenome_out/*
 !phasegenome_out/doc/
+!phasegenome_out/data/results/figures/
+!phasegenome_out/data/results/tables/
 snakemake_project/
 str8_analysis/
 titan_project/
