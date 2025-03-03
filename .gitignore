@@ -7,7 +7,7 @@
 # str8_analysis/
 # tj_notebook/
 # bin/
-data/
+
 phasegenome_out/*
 !phasegenome_out/doc/
 !phasegenome_out/data/results/figures/
@@ -16,7 +16,7 @@ snakemake_project/*
 str8_analysis/*
 titan_project/*
 tj_notebook/*
-
+data/*
 # ./phasegenome_out/tmp-hydra/
 
 # ./phasegenome_out/bin/
