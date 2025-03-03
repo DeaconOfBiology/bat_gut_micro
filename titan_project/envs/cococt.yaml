@@ -1,5 +1,0 @@
-name: concoct
-channels:
-  - bioconda
-dependencies:
-  - concoct==1.1.0

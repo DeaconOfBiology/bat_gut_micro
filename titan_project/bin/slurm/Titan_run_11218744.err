@@ -1,2 +1,0 @@
-2024-10-11 12:20:32,916	INFO worker.py:1616 -- Started a local Ray instance. View the dashboard at [1m[32mhttp://127.0.0.1:8265 [39m[22m
-slurmstepd: error: *** JOB 11218744 ON str-c33 CANCELLED AT 2024-10-11T12:21:34 ***

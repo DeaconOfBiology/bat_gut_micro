@@ -1,3 +1,0 @@
-Loading anaconda3/2020.11
-  ERROR: anaconda3/2020.11 cannot be loaded due to a conflict.
-    HINT: Might try "module unload mambaforge/4.14" first.

@@ -1,2 +1,0 @@
-2024-10-11 12:22:17,328	INFO worker.py:1616 -- Started a local Ray instance. View the dashboard at [1m[32mhttp://127.0.0.1:8265 [39m[22m
-slurmstepd: error: *** JOB 11218747 ON str-c33 CANCELLED AT 2024-10-13T12:22:33 DUE TO TIME LIMIT ***

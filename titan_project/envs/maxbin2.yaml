@@ -1,5 +1,0 @@
-name: maxbin2
-channels:
-  - bioconda
-dependencies:
-  - maxbin2==2.2.7
