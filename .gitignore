@@ -8,6 +8,7 @@
 # tj_notebook/
 # bin/
 data/
+!phasegenome_out/
 phasegenome_out/*
 !phasegenome_out/doc/
 !phasegenome_out/data/results/figures/
