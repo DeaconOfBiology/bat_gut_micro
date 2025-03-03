@@ -13,9 +13,10 @@ data/
 !phasegenome_out/
 phasegenome_out/*
 !phasegenome_out/doc/
-!phasegenome_out/data/results/
+
+phasegenome_out/data/results/*
 !phasegenome_out/data/results/figures/
-!phasegenome_out/data/results/tables/
+# !phasegenome_out/data/results/tables/
 
 # Ignore entire directories
 snakemake_project/
