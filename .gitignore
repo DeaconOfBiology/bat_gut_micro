@@ -1,0 +1,42 @@
+####################################################
+# Files to ignore from the bat_gut_micro directory #
+####################################################
+# data
+# snakemake_project/
+# titan_project/
+# str8_analysis/
+# tj_notebook/
+# bin/
+data/
+phasegenome_out/*
+!phasegenome_out/doc/
+!phasegenome_out/data/results/figures/
+!phasegenome_out/data/results/tables/
+snakemake_project/*
+str8_analysis/*
+titan_project/*
+tj_notebook/*
+
+# ./phasegenome_out/tmp-hydra/
+
+# ./phasegenome_out/bin/
+
+# ./phasegenome_out/data/processed/
+# ./phasegenome_out/data/raw/
+# ./phasegenome_out/data/references/
+# ./phasegenome_out/data/retreived/
+# ./phasegenome_out/data/tmp/
+
+# ./phasegenome_out/data/results/cazy_results/
+
+# ###################
+# # Files to ignore #
+# ###################
+# ./phasegenome_out/data/results/figures/old/
+# ./phasegenome_out/data/results/tables/old/
+# ./phasegenome_out/raw-080613-5-ph_all_files.tar.gz
+
+########################################
+# Files to ignore in the Titan project #
+########################################
+
