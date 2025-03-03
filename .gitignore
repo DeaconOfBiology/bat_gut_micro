@@ -8,11 +8,16 @@
 # tj_notebook/
 # bin/
 data/
+
+# Allow tracking of phasegenome_out and its subdirectories
 !phasegenome_out/
 phasegenome_out/*
 !phasegenome_out/doc/
+!phasegenome_out/data/results/
 !phasegenome_out/data/results/figures/
 !phasegenome_out/data/results/tables/
+
+# Ignore entire directories
 snakemake_project/
 str8_analysis/
 titan_project/
