@@ -336,6 +336,11 @@ knitr::include_graphics("../../data/results/figures/phage-host_bat_network_final
   
   Within the MAGs, a total of **52** AMR genes across **X** AMR classes were unique to _M. crenulatum_, **22** AMR genes across **X** AMR classes were unique to _P. hastatus_, while no AMR genes were found to be unique to _P. discolor_ (**Fig X**). Unique AMR genes within _M. crenulatum_ were within the classes **X,Y,andZ**. The most abundant of these were **A,B,andC**. The **22** AMR genes unique to  _P. hastatus_ were within the classes **X,Y,andZ** with the most predominate genes being **A,B,andC**. Interesting **71** AMR genes (representing **X** classes) were shared between _M. crenulatum_ and _P. hastatus_ while only 3 (representing **X** classes) were shared between _P. discolor_ and _P. hastatus_ and only 2 between (representing **X** classes) _M. crenulatum_ and _P. discolor_. 
 
+# ```{r Fig6, echo = FALSE, message=FALSE, fig.cap='**Figure 6. Phage-host network analysis.**'}
+# 
+# knitr::include_graphics("../../data/results/figures/")
+# ``` 
+
 ### vMAG resistome diversity
   
 
