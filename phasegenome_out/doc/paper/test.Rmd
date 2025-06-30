@@ -1,25 +1,13 @@
 ---
-title: "Resolving gut microbiome networks within Chiropterans"
-author:
-  - name: "Timothy J. Rogers"
-    affiliation: "Department of Bioinformatics, University of North Carolina, Charlotte, NC 28223"
-    email: "troger50@charlotte.edu"
-  - name: "Laurel R. Yohe"
-    affiliation: "Department of Bioinformatics and Genomics, North Carolina Research Center (NCRC), Kannapolis, NC 28081"
-    email: "lyohe1@charlotte.edu"
-  - name: "Richard A. White \\(^\\dagger\\)"
-    affiliation: "Department of Bioinformatics, University of North Carolina, Charlotte, NC 28223"
-    email: "rwhit101@charlotte.edu"
-
-  
-abstract: |
-  Enter the text of your abstract here.
+title: "test"
+output: html_document
+date: "2025-03-03"
 ---
 
 ${\dagger}$ To whom correspondence should be addressed
 
 \newpage
-```{r, include=FALSE}
+```{r}
 library(data.table)
 library(tidyverse)
 ```
@@ -113,69 +101,32 @@ library(tidyverse)
   - HiC
 
 ### MAGs
-```{r, include=FALSE}
+```{r, echo=FALSE}
 # Quality and length of rarefied MAGs
 mag_stats<-fread("../../data/results/tables/mag_stats.csv")
 # Abudance information:
 mag_fam_rel_abun<-fread("../../data/results/tables/mag_fam_rel_abun.csv")
 phylum_rel_abun<-mag_fam_rel_abun%>%select(-V1,-class:-family)%>%
   aggregate(.~phylum,sum)
-colSums(phylum_rel_abun[,-1])
+#colSums(phylum_rel_abun[,-1])
 ```
-* (AND) We recovered `r mag_stats[domain=="Archaea",.N]` Archaeal and `r mag_stats[mag_stats$domain=="Bacteria",.N]` Bacterial medium to high quality MAGs with $\geq$ `r paste0(round(min(mag_stats$completeness))," %")` and $\leq$ `r paste0(round(max(mag_stats$contamination))," %")` redundancy.
-* (AND) Of these `r nrow(mag_stats)` MAGs, `r length(mag_stats$MAG[mag_stats$completeness>=90 & mag_stats$contamination<10])` were $\geq$ 90% complete and $\leq$ 10% redundant, while YY are of high quality as determined by parameters layed out in XXX et al. (** TABLE **).
-* (AND) _Bacillota_, _Actinomycetota_, and _Pseudomonadata_ were the predominate phylum across the gut microbiome within all 3 of the bat species.
+* (AND) We recovered `r mag_stats[domain=="Archaea",.N]` Archaeal and `r mag_stats[mag_stats$domain=="Bacteria",.N]` Bacterial medium to high quality MAGs with $\geq$ `r paste0(round(min(mag_stats$completeness)),"%")` and $\lt$ `r paste0(round(max(mag_stats$contamination)),"%")` redundancy.
+* (AND) Of these `r nrow(mag_stats)` MAGs, `r length(mag_stats$genome[mag_stats$completeness>=90 & mag_stats$contamination<10,])` were $\geq$ 90% complete and $\lt$ 10% redundant, while YY are of high quality as determined by parameters layed out in XXX et al. (** TABLE **).
+* (AND) Bacillota, Actinomycetota, and Pseudomonadata were the predominate phylum across the gut microbiome within all 3 of the bat species.
 * (AND) No significant differnces were found in the richness (Choa1) or evenness (Pielou's Index) of prokaryotic MAGs across the 3 bat species.
 * (AND) db-RDA analysis revealed no significant differnce in the $B$-diversity of the prokaryotic MAGs across the 3 bat species.
 
-```{r FigX, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Some cool caption', out.height = "350px", out.width='400px'}
-
-knitr::include_graphics("../../data/results/figures/FigX_top10_most_abun_mag_taxa.pdf")
-```
-
-
-
 ### vOTUs
-```{r,include=FALSE}
-vOTU_rar_cov<-fread("../../data/results/tables/vOTU_rarified_counts.csv")
-vOTU_rel_abun<-fread("../../data/results/tables/viral_rel_abun.csv")
-vOTU_quality<-fread("../../data/results/tables/quality_summary.tsv") %>%
-  filter(contig_id %in% colnames(vOTU_rar_cov[,-1]))
+```{r,echo=FALSE}
 
 ```
-* (AND) A total of 17702 potential viral sequences were ID from the 6 individual assemblies. 
-* (AND) Clustering at 95% ANI over 85% of the shortest sequence identified 16289 viral operational taxanomic units (vOTUs) that were $\geq$ 1 kbp in length.
-* (AND) Further filtering for sequences $\geq$ 2.5 kpb resulted in a final set of 6235 vOTUs.
-* (AND) After rarefaction, `r ncol(vOTU_rar_cov[,-1])` vOTUs were retained. 
-* (AND) CheckV was used to assess the quality of these sequences, revealing that `r nrow(vOTU_quality[vOTU_quality$completeness>=45.5])` (`r round(nrow(vOTU_quality[vOTU_quality$completeness>=45.5])/nrow(vOTU_quality)*100)`%) were $\geq$ 50% complete including `r nrow(vOTU_quality[vOTU_quality$checkv_quality=="Complete"])` complete vOTUs that identified on the bases of direct terminal repeats (DTR), `r nrow(vOTU_quality[vOTU_quality$checkv_quality=="High-quality" & vOTU_quality$completeness>=45.5])` high quality vOTUs that were identified on the bases of AAI (`r nrow(vOTU_quality[vOTU_quality$checkv_quality=="High-quality" & vOTU_quality$completeness>=45.5 & grepl("AAI",vOTU_quality$completeness_method)])` vOTUs) and HMM (`r nrow(vOTU_quality[vOTU_quality$checkv_quality=="High-quality" & vOTU_quality$completeness>=45.5 & grepl("HMM",vOTU_quality$completeness_method)])` vOTUs), `r nrow(vOTU_quality[vOTU_quality$checkv_quality=="Medium-quality" & vOTU_quality$completeness>=45.5])` medium quality vOTUs that were idenified on the bases on AAI (`r nrow(vOTU_quality[vOTU_quality$checkv_quality=="Medium-quality" & vOTU_quality$completeness>=45.5 & grepl("AAI-based",vOTU_quality$completeness_method)])` vOTUs) and HMM (`r nrow(vOTU_quality[vOTU_quality$checkv_quality=="Medium-quality" & vOTU_quality$completeness>=45.5 & grepl("HMM",vOTU_quality$completeness_method)])` vOTUs), and `r nrow(vOTU_quality[vOTU_quality$checkv_quality=="Low-quality" & vOTU_quality$completeness>=45.5])` low quality vOTUs that were identified based on AAI (`r nrow(vOTU_quality[vOTU_quality$checkv_quality=="Low-quality" & vOTU_quality$completeness>=45.5 & grepl("AAI-based",vOTU_quality$completeness_method)])` vOTUs) and HMM (`r nrow(vOTU_quality[vOTU_quality$checkv_quality=="Low-quality" & vOTU_quality$completeness>=45.5 & grepl("HMM",vOTU_quality$completeness_method)])` vOTUs). The reset of the vOTUs (`r nrow(vOTU_quality[vOTU_quality$completeness<45.5|is.na(vOTU_quality$completeness)])`) were of low quality (`r nrow(vOTU_quality[vOTU_quality$completeness<45.5])`) or the quality was undetermined (`r nrow(vOTU_quality[is.na(vOTU_quality$completeness)])`).
-* (AND) An unclassified order of the class _Caudoviricetes_, families _Retroviridae_, _Adintoviridae_, and _Iridoviridae_, an unclassified family of _Kyanoviridae_, families _Inoviridae_ and _Bornaviridae_, an unclassified family of _Herelleviridae_, families _Mimiviridae_ and _Parvoviridae_ were the most predominate viral taxa across the gut virome with all 3 of the bat species.
-* (But) No statistically significant differences were found in the viral richness, envenness, or $B$-diversity nor did indicator analysis reveal any indicator viral spices for the bat species.
-
-```{r FigY, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Some cool caption', out.height = "350px", out.width='400px'}
-
-knitr::include_graphics("../../data/results/figures/FigX_top10_most_abun_viral_taxa.pdf")
-```
-
-### Virus-host matching
-
-
+- A total of XX vOTUs were recovered.
+- X, Y, and Z were the most predominate viral taxonomic unit across the gut virome with all 3 of the bat species.
 
 #### Metabolic capabilities
 * (AND)
-
 ## Descusion
-Macro Eukarotic
-* _Iridoviridae_
-*_Bornaviridae_
-*_Paroviruses_ 
 
-Micro Eukarotic
-*_Mimiviridae_
-
-Bacterial phage
-* an unclassified family of _Kyanoviridae_
-* _Inoviridae_
-* an unclassified family of _Herelleviridae_
 ## Conclusion
 
 ## Acknowledgement

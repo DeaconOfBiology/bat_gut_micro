@@ -1,0 +1,367 @@
+---
+title: "Resolving gut microbiome networks within Chiropterans"
+author: "Timothy J. Rogers, Richard A. White, Laurel R. Yohe†"
+affiliation: "Department of Bioinformatics, University of North Carolina, Charlotte, NC; Department of Bioinformatics and Genomics, North Carolina Research Center (NCRC), Kannapolis, NC"
+output:
+  word_document:
+    reference_docx: ~/Documents/draft_rmd_styles/word-styles-reference-01.docx
+---
+
+${\dagger}$ To whom correspondence should be addressed
+
+\newpage
+```{r, include=FALSE}
+library(data.table)
+library(tidyverse)
+library(phyloseq)
+```
+
+```{r,include=FALSE}
+# Useful functions:
+join_with_and <- function(x) {
+  if(length(x) > 1){
+    paste(paste(x[-length(x)], collapse = ", "), "and", x[length(x)])
+  } else {
+    x
+  }
+}
+```
+# Abstract
+
+\newpage
+
+# Introduction
+* Bats are known carriers of human associated pathogens
+* The reason bats are bioreactors is not understood
+* The diet of bats may contribute to the gut microbiota makeup
+* Phage associated with these microbiota can benifit and hinder microbial populations and have an impack on bat immune responses
+* Some ideas suggest viral tolerance is linked to 
+  - Uniqueness of bats and their variation in Diets
+    - Diversity
+    - Ecological role
+    - Pathogenic role
+* Methods for characterizing microbiome and virome. As well as methods for linking the two  
+  - Culture dependant vs independent
+    - What has been discovered with these methods
+    - How these methods have been applied to bats 
+      - What has been found
+      - What has yet to be discribed
+- Goal of this study
+
+
+```{r FigX, echo = FALSE, message=FALSE, fig.cap='**Figure X. Bat Holobiont**'}
+
+  knitr::include_graphics("../../data/results/figures/")
+```
+# Materials and Methods
+* Sample location discription
+* Sample collection
+* Sample processing
+### Phase genomics portion
+* (AND) 
+
+## Sample collection
+### ProxiMeta Hi-C and metagenomic pipeline
+  Guano samples were then used to generate Hi-C libraries using the protocol included in the ProxiMeta Hi-C kit (**Phase Genomics**). Hi-C operates by chemically cross-linking DNA fragments that lie in close spatial proximity inside intact cells, allowing for active phage infection identification. High quality Hi-C libraries were produced for **X** guano samples from **X** bat species. **X** libraries were successfully extracted and sequenced from bat species **X**, **Y**, and **Z**. Briefly, extracted genomic DNA along with chemically fixed fecal samples were sent to Phase Genomics (Seattle, WA, USA) for Hi-C proximity ligation and sequencing. Hi-C libraries were constructed using the Phase Genomics ProxiMeta Hi-C v4.0 Kit, while metagenomic shotgun libraries were generated in parallel with ProxiMeta’s standard library preparation reagents. Both library types were sequenced on an Illumina NovaSeq instrument to produce 150 bp paired-end reads. (**Need to add in here the methods that ProxiMeta uses to construct the MAGs**). The resulting **X** million Hi-C and **X** million shotgun metagenomic paired-end read fastq files were then uploaded to the Phase Genomics cloud portal for downstream analysis.
+
+## Microbial Community Profiling
+  SingleM (vXXX; **CITATION**) "pipe" was used to extract metagenome operational taxonomic units (mOTUs) from 59 single copy conserved genes (22 Bacteria-specific, 24 Archaea-specific, and another 13 targeting both domains) identified in the raw reads and create an OTU table. Then, SingleM "pipe" was ran on the dereplicated metagenome assembled genomes (MAGs; see below) as well as the unbinned contigs. The OTU tables from the raw reads, MAGs, and unbinned contigs were then compared using SingleM "appraise" using a sequence identity of 89% to determine how much of the metagenomes were represented in the assemblies and MAGs at the genus level. 
+
+### MAG curration and taxonomic identification
+  The ProxiMeta produced a total of 441 medium to high quality MAGs ($\geq$ 50% complete with $\leq$ 10% redundancy) across all bat species. MAGs were retrieved from the Phase Genomics cloud portal and stored on the University of North Carolina at Charlotte's high-performance computing (HPC) cluster. To allow for comparision of MAGs across samples, dRep (**CITATION**) was used to dereplicate the MAGs at 98% ANI using the command “dRep cluster --SkipMash --S_algorithm fastANI -comp 50”. This resulted in a final MAG set of 239 medium to high quality dereplicated MAGs. MAG quality was determined by CheckM2 (**v x.x.x**). MAG taxonomy was assigned using the Genome Taxonomy Database Toolkit (GTDB-Tk(**CITATION**)). GTDB nomenclature is used throughout the manuscript. However, other commonly used nomenclatures are used when they aid in clarity. 
+
+### vOTU curration
+  Viral contigs (vContigs) identified by ProxiMeta were retrieved from the Phase Genomics cloud portal. To identify potential vContigs not identified by ProxiMeta, genomade (**V**) was used to scan the assembly files. Anvi'o (**V**) anvi-script-reformate was using to clean up all identied vContig headers for downstream analysis. From there, all vContigs were combined into a single fasta file. They were then clustered into viral operational taxonomic units (vOTUs) at 95% average nucleotide identity (ANI) over 85% of the alignment fraction of the shorter sequence using the greedy centroid algorithm (anicalc.py and aniclust.py) from CheckV (v x.x.x). vOTUs were then ran through CheckV for quality scores and lifestyle predictions. In addition to CheckV, BACPHLIP (**V**) was also used in addition to finer scale resolution of viral lifestyle of the vOTUs. Viral lifestyle (lytic or lysogenic) was determined by integrating predictions from CheckV and BACPHLIP. The CheckV "provirus" annotation was considered, where a value of "Yes" indicated the presence of a provirus and suggested a lysogenic lifestyle. BACPHLIP outputs included probabilities for "Virulent" and "Temperate" lifestyles, each ranging from 0 to 1. A vOTU was classified as lysogenic if CheckV annotated it as a provirus ("Yes"), or if the BACPHLIP "Temperate" probability was ≥0.5. A contig was classified as lytic if CheckV did not detect a provirus ("No") and the BACPHLIP "Virulent" probability was ≥0.75, or ≥0.5 if the genome was estimated to be 100% complete. If neither tool confidently predicted the lifestyle, the contig was labeled as "unclear." The method used for each final prediction was also recorded, indicating whether the lifestyle assignment was based on CheckV, BACPHLIP, or a combination of both. 
+
+
+### vOTU and MAG coverage
+  Quantification of dereplicatied MAGs and vOTUs across all samples was calculated using the anvi'o tool. Briefly, quality controlled reads were mapped to the vOTUs and representative MAGs using bowtie (v x.x.x) and sam files were converted to indexed and sorted bam files using samtools (v x.x.x) (**CITATION**). The resulting BAM files for the MAGs and vOTUs were then used by the anvi'o tool kit to calculate the  depth of coverage across nucleotide positions in which coverage was within the interquartile range (Q2Q3). Q2Q3 coverage was used to filter out outliers in coverage caused highly similar sequences shared among different taxa. MAG abundance was quantified in units of weight mean transcripts per million reads (wtTPM) for contigs within each MAG. First, we calculated the transcripts per million reads (TPM) for each contig at each site (**equation 1**).
+  
+  **Equation 1:**
+  $\mathrm{TPM}_i = \frac{c_i/L_i}{\sum_{j=1}^n c_j/L_j} \times 10^6$
+
+  In this equation, $TPM_i$ denotes the Transcripts Per Million value for contig ${i}$, representing the normalized abundance of that contig after adjusting for both contig length and total sequencing depth. The variable ${c}_i$ refers to the number of sequencing reads mapped to contig ${i}$, while ${L}_i$ is the length of contig ${i}$ in base pairs. We then multiply by one million ($10^6$) to convert the values into TPM units.To then quantify MAG abundance across samples, we then calculated the wtTPM using the below equation 2
+ 
+ **Equation 2:**
+ $\mathrm{wtTPM}_m = \frac{\sum_{c=1}^n TPM_i \times L_i}{\sum_{c=1}^n L_i}$
+ 
+In this expression, $wtTPM_m$ denotes the length-weighted mean TPM for the total contigs within metagenome-assembled genome (MAG) $m$. vOTU abundance was quantified as transcripts per million reads (TPM; Equation 1).
+
+### vOTU and MAG metabolic predictions
+  Metacerberus (**CITATION**) was used for open reading frame prediction, gene annotation, KEGG orthology identifier linkage, and metabolic predictions using the Functional Ontology Assignments for Metagenomes (FOAM; (**CITATION**)), KEGG (**CITATION**), CAZy/dbCAN (**CITATION**), VOG (**CITATION**), pVOG (**CITATION**), PHROG (**CITATION**), and COG (**CITATION**) databases. An in house script was usied to identify AMR and CAZY genes as well as calculate their coverage/abundance.
+
+### Linking virus to host
+  In addition to the host associations predicted through proximity ligation by ProxiMeta, iPHoP (Integrated Phage HOst Prediction; **Roux et al. 2023**) was also used to identify additional potential host associations. iPHoP uses six host prediction methods to determine phage-host interactions (typically at a genus or family rank): Blast, CRISPR spacer matching  (**CITATION**), three different oligonucleotide frequency (ONF) comparison methods (VirHostMatcher (**CITATION**), WIsH (**CITATION**), and PHP (**CITATION**)), and Random Forest Assignment of Hosts (RaFAH; (**CITATION**)). First, iPHoP was ran with default parameters to predict host of a vOTUs based on iPHoP's default database (**DATA BASE VERSION**). Then, the original 441 MAGs from ProxiMeta were added to the default database using (using the "add_to_db" function) to create a custom database. This custom database was used to run a final host prediction on the same vOTUs. Finally, phage-host pairings were filtered using a minimum cutoff pairing score of 75. Only host paring predictions to MAGs were considered for down stream analysis. If a vOTU was paired to a MAG that was not a representative MAG via proximity ligation or one of iPHoPs methods, then that pairing was given to the representative MAG for downstream analysis.
+
+### Statistical analysis
+  Results were imported into R for analysis and visualization using the R packages data.table (**CITATION**), tidyverse (**CITATION**), ggplot (**CITATION**), vegan (**CITATION**), hillR (**CITATION**), phyloseq (**CITATION**), ggtext (**CITATION**), and ggpubr (**CITATION**). mOTUs identified by SingleM were used to assess alpha and beta diversity. Differences in prokaryotic community composition among bat species were analyzed using distance-based redundancy analysis (db-RDA) on a Hellinger distance matrix. Statistical significance was evaluated with 9,999 permutations using the R package vegan (**V**) (**Oksanen et al. 2015**). Richness (Chao1), evenness (Pielou's index), and alpha diversity (Hill numbers at q = 1, corresponding to the inverse Shannon index) were calculated. Comparisons of alpha diversity across bat species were performed using two-way ANOVA.
+  To identify microbial mOTUs associated with each bat species, we performed an indicator species analysis following the approach of **De Cáceres and Legendre (2009)** and **De Cáceres et al. (2010)**. Group-equalized correlation coefficients (r₉) were calculated for each bat species to account for differences in taxon abundance and enable direct comparisons among taxa with varying relative abundances. Statistical significance was assessed through 9,999 permutations. All analyses were carried out using the R package indicspecies (**V**) (**De Cáceres et al. 2016**). Subsequently, the relative abundances of indicator mOTUs were calculated for each bat species.
+
+# Results
+## SingleM analysis
+```{r,include=FALSE}
+# Before rarifaction
+single_otu<-fread("../../data/results/tables/singlem_taxa.csv")
+
+# After rarifaction
+#Calling in phyloseq object
+rel_abun_phy<-readRDS("../../data/results/tables/singleM__rarefied_phy.rds")
+
+```
+  Bat gut microbiomes were profiled based on metagenome operational taxonomic units (mOTU) using `r length(unique(single_otu$marker))` single copy conserved genes identified by SingleM. After rarefaction, and removal of Eukaryota sequences, a total of `r nrow(otu_table(rel_abun_phy))` mOTUs were retained. tb-RDA on the Hellinger distance matrix revealed significant differences in the gut prokaryotic community composition across the three bat species (**Fig. 1**, _adj. R^2^_=0.27, _F_=2.3, _P_ < 0.01). However, pairwise comparisons were unable to detect differences across the bat species.
+
+```{r Fig1, echo = FALSE, message=FALSE, fig.cap='**Figure 1. Transformation based redundancy analysis of the bat gut prokaryotic community mOTUs.**'}
+
+  knitr::include_graphics("../../data/results/figures/new_singlem_dbrda.pdf")
+```
+
+
+
+```{r,include=FALSE}
+#Calculating relative abundance of phylum
+phy_per<-((table(tax_table(rel_abun_phy)[,"phylum"])/sum(table(tax_table(rel_abun_phy)[,"phylum"])))*100)%>%
+  sort(.,decreasing=TRUE)%>%data.frame%>%
+  rename(phylum=Var1)%>%
+  mutate(phy_percent=ifelse(Freq==max(Freq),paste0(round(Freq),"% of the mOTUs belonged to _",phylum,"_"),paste0(round(Freq),"% belonged to _",phylum,"_")))
+
+#Calling in indicator analysis csv
+ind_sp<-fread("../../data/results/tables/median_final_indicator_table.csv")%>%
+  mutate(across(`Mimon crenulatum`:`Phyllostomus hastatus`, ~as.numeric(gsub("\\*\\*", "", .))))
+
+# Indicator species analysis results for singlem
+# sm_indic<-fread("../../data/results/tables/bat_gut_singlem_indicator_sp.csv")
+
+```
+
+### Prokaryotic community differences across the gut of bat species
+  Across bat species, `r paste0(phy_per$phy_percent[phy_per$Freq==max(phy_per$Freq)],", ", join_with_and(phy_per$phy_percent[phy_per$Freq>1&phy_per$Freq<max(phy_per$Freq)]))`. The remaining phylum constituted < 1% each. Prokaryotic $\alpha$-diversity (inverse-Shannon) did not significantly differ across bat species. However, Prokaryotic community evenness was significantly lower in _Phyllostomus discolor_ than in _P. hastus_ (**Fig. 2C**, P<0.05). Even so, no significant difference was found in the prokaryotic richness (Chao1). A total of `r length(unique(ind_sp$OTU_ID))`Indicator species analysis, based on r~g~, identified specific mOTUs common in some bat species, but in lower relative abundance in others (**Table SX**). 
+  
+  For example, members of the bacteria pylum _Bacillota_, _Loactococcus lactis_ and unidentified taxa in the genera _Loactococcus_ and  _Streptococcus_, had high relative abundances in _Mimon crenulatum_ (10%, 10%, and 6% respectively) while they were not found at all in _P. discolor_ nor _P. hastus_. Unidentified taxa in the bacteria genus _Arachnia_ and another in the domain _Archean_ were abundant in _P. discolor_ (.03% and .01% respectively) but were not present in _P. hastus_ nor _M. crenulatum_. Conversely, members of the bacteria _Bacillota_, an unidentified taxa in the genus _Gemella_ and the species _Gemella sanguinis_, had higher abundances in _P. hastus_ (35%, and 3% respectively) when compared to _M. crenulatum_ or _P. discolor_.
+
+```{r Fig2, echo = FALSE, message=FALSE, fig.cap='**Figure 2. Bat gut prokaryotic community diversity of the mOTUs.**', out.height = "800px", out.width='480px'}
+
+  knitr::include_graphics("../../data/results/figures/singleM_rarefied_a-diversity.pdf")
+```
+
+## Metagenomic analysis
+
+### MAG diversity and community representation
+```{r, include=FALSE}
+# Quality and length of rarefied MAGs
+mag_stats<-fread("../../data/results/tables/MAG_quality.csv")
+# Abudance information:
+#mag_fam_rel_abun<-fread("../../data/results/tables/mag_fam_rel_abun.csv")
+#phylum_rel_abun<-mag_fam_rel_abun%>%select(-V1,-class:-family)%>%
+  #aggregate(.~phylum,sum)
+#colSums(phylum_rel_abun[,-1])
+```
+  Assembly, binning, and dereplication at the species level resulted in the recovered of `r mag_stats[domain=="Archaea",.N]` Archaeal and `r mag_stats[mag_stats$domain=="Bacteria",.N]` Bacterial medium to high quality MAGs with $\geq$ `r paste0(round(min(mag_stats$completeness))," %")` and $\leq$ `r paste0(round(max(mag_stats$contamination))," %")` redundancy. Of these `r nrow(mag_stats)` MAGs, `r length(mag_stats$MAG[mag_stats$completeness>=90 & mag_stats$contamination<10])` were $\geq$ 90% complete and $\leq$ 10% redundant, while **X** meet the MIMAG standard of high quality draft genomes ((**CITATION**), **Table**). **X%** (n=**X**) of the MAGs were prepredicted to be novel by GTDB-Tk (**what tax levels**). 
+  
+  These MAGs represented between 16% and 78% of the whole community, with a median of 61.4% based on the genus-level recovery estimentes ((**Singlem Citation**), **TABLE X**). _Bacillota_, _Actinomycetota_, and _Pseudomonadata_ were the predominate phylum across the gut microbiome MAGs within all 3 of the bat species (**Fig 3**).
+
+```{r Fig3, echo = FALSE, message=FALSE, fig.cap='**Figure 3. Top 10 most abundant MAG phylum from across the bat gut metagenomes**', out.height = "700px", out.width='800px'}
+
+knitr::include_graphics("../../data/results/figures/FigX_top10_most_abun_mag_taxa.pdf")
+```
+
+
+
+### vOTUs
+```{r,include=FALSE}
+vOTU_rar_cov<-fread("../../data/results/tables/vOTU_rarified_counts.csv")
+vOTU_rel_abun<-fread("../../data/results/tables/viral_rel_abun.csv")
+vOTU_quality<-fread("../../data/results/tables/quality_summary.tsv") %>%
+  filter(contig_id %in% colnames(vOTU_rar_cov[,-1]))
+
+```
+  A total of **17702** potential viral sequences were ID from the 6 individual assemblies. Clustering at 95% ANI over 85% of the shortest sequence identified 16289 viral operational taxanomic units (vOTUs) that were $\geq$ 1 kbp in length. Further filtering for sequences $\geq$ 2.5 kpb resulted in a final set of 6235 vOTUs. After rarefaction, `r ncol(vOTU_rar_cov[,-1])` vOTUs were retained. CheckV was used to assess the quality of these sequences, revealing that `r nrow(vOTU_quality[vOTU_quality$completeness>=45.5])` (`r round(nrow(vOTU_quality[vOTU_quality$completeness>=45.5])/nrow(vOTU_quality)*100)`%) were $\geq$ 50% complete including `r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="Complete"])` complete vOTUs that identified on the bases of direct terminal repeats (DTR), `r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="High-quality" & vOTU_quality$completeness>=45.5])` high quality vOTUs that were identified on the bases of AAI (`r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="High-quality" & vOTU_quality$completeness>=45.5 & grepl("AAI",vOTU_quality$completeness_method)])` vOTUs) and HMM (`r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="High-quality" & vOTU_quality$completeness>=45.5 & grepl("HMM",vOTU_quality$completeness_method)])` vOTUs), `r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="Medium-quality" & vOTU_quality$completeness>=45.5])` medium quality vOTUs that were idenified on the bases on AAI (`r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="Medium-quality" & vOTU_quality$completeness>=45.5 & grepl("AAI-based",vOTU_quality$completeness_method)])` vOTUs) and HMM (`r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="Medium-quality" & vOTU_quality$completeness>=45.5 & grepl("HMM",vOTU_quality$completeness_method)])` vOTUs), and `r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="Low-quality" & vOTU_quality$completeness>=45.5])` low quality vOTUs that were identified based on AAI (`r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="Low-quality" & vOTU_quality$completeness>=45.5 & grepl("AAI-based",vOTU_quality$completeness_method)])` vOTUs) and HMM (`r nrow(vOTU_quality[vOTU_quality$CheckV_quality=="Low-quality" & vOTU_quality$completeness>=45.5 & grepl("HMM",vOTU_quality$completeness_method)])` vOTUs). The reset of the vOTUs (`r nrow(vOTU_quality[vOTU_quality$completeness<45.5|is.na(vOTU_quality$completeness)])`) were of low quality (`r nrow(vOTU_quality[vOTU_quality$completeness<45.5])`) or the quality was undetermined (`r nrow(vOTU_quality[is.na(vOTU_quality$completeness)])`). An unclassified order of the class _Caudoviricetes_, families _Retroviridae_, _Adintoviridae_, and _Iridoviridae_, an unclassified family of _Kyanoviridae_, families _Inoviridae_ and _Bornaviridae_, an unclassified family of _Herelleviridae_, families _Mimiviridae_ and _Parvoviridae_ were the most predominate viral taxa across the gut virome with all 3 of the bat species (**Figure 4**). No statistically significant differences were found in the viral richness, envenness, $\alpha$-diversity, or $B$-diversity nor did indicator analysis reveal any indicator viral spices for the bat species.
+
+```{r Fig4, echo = FALSE, message=FALSE, fig.cap='**Figure 4. Top 10 most abundant viral taxa from across the bat gut metagenomes**', out.height = "700px", out.width='800px'}
+
+knitr::include_graphics("../../data/results/figures/FigX_top10_most_abun_viral_taxa.pdf")
+```
+
+
+### Virus-host predicitons
+```{r,include=FALSE}
+# Iphope and phase virus-host predictions #
+###########################################
+ip_ph_compare<-fread("../../data/results/tables/iphop_phase_compare.csv")
+ip_ph_compare_w_indicators<-fread("../../data/results/tables/ip_ph_compare_with_indicator_info.csv")
+
+# IPhop and phase virus-host predictions at the taxonomic level #
+#################################################################
+ip_ph_compare_taxa<-fread("../../data/results/tables/iphop_phase_compare_taxa_level.csv")
+
+# Host Phylum target frequency #
+################################
+# Compute the aggregate and filter
+df_filtered <- unique(ip_ph_compare[, c("MAG", "phylum")]) %>% 
+  mutate(num_mags=1)%>%
+  aggregate(num_mags ~ phylum, sum) %>%
+  arrange(desc(num_mags)) %>%
+  filter(num_mags >= 10)
+# Wrap each phylum with asterisks for italics in Markdown
+df_filtered$phylum <- paste0("*", df_filtered$phylum, "*")
+# Create nicely formatted strings for phyla and their corresponding num_mags
+join_with_and <- function(x) {
+  if(length(x) > 1){
+    paste(paste(x[-length(x)], collapse = ", "), "and", x[length(x)])
+  } else {
+    x
+  }
+}
+
+phy_string <- join_with_and(df_filtered$phylum)
+mags_string <- join_with_and(df_filtered$num_mags)
+
+host_fam_count<-unique(ip_ph_compare_taxa[, c("phylum", "host_family","num_mags")])%>%
+  arrange(desc(num_mags)) %>% 
+  mutate(phylum=paste0("*", phylum, "*"),
+         host_family=paste0("*", host_family, "*"))%>% 
+  filter(phylum %in%df_filtered$phylum)
+
+fam_string_join<-function(df,phy){
+  phy_select<-df%>%
+    filter(phylum==phy)%>%
+    { if (any(.$num_mags >= 5)) {
+      filter(., num_mags >= 5)
+    } else {
+      filter(., num_mags == max(num_mags))
+    }
+  }
+  fam_join<-join_with_and(phy_select$host_family)
+  num_join<-join_with_and(phy_select$num_mags)
+  return(list(fam_join,num_join))
+}
+# Table of phage-host pairing
+table_df <- as.data.frame(table(ip_ph_compare$lifestyle, ip_ph_compare$iphop, ip_ph_compare$phase))%>%
+  subset(Freq!=0)
+
+names(table_df) <- c("lifestyle", "iphop", "phase", "Freq")
+
+table_df<-table_df%>%
+  mutate(prediction=case_when(iphop==TRUE&phase==TRUE~"both",
+                              iphop==TRUE&phase==FALSE~"iphop",
+                              iphop==FALSE&phase==TRUE~"phase"))%>%
+  select(-iphop,-phase)%>%
+  group_by(prediction) %>%
+  mutate(percent_within_group = round(Freq / sum(Freq) * 100)) %>%
+  ungroup()
+```
+
+  Phage-host detected by Hi-C were compared to those made by the bioinformatics pipeline iPHoP. Using both Hi-C and iPHoP methods, a total of `r nrow(unique(ip_ph_compare[,c("MAG","vOTU")]))` phage-host predictions were made using phase HiC and IPHoP methods. These predictions included  `r round(length(unique(ip_ph_compare$MAG))/nrow(mag_stats)*100)`% (n= `r length(unique(ip_ph_compare$MAG))`) of the total MAGs and **x/y*100**% (n=`r length(unique(ip_ph_compare$vOTU))`) of the total vOTUs. 
+  
+  Hi-C analysis allowed for the identification of `r nrow(ip_ph_compare[iphop==FALSE&phase==TRUE])` unique phage-host links comprised of `r length(unique(ip_ph_compare[ip_ph_compare$phase=="TRUE"&ip_ph_compare$iphop=="FALSE"]$MAG))` MAGs and `r length(unique(ip_ph_compare[ip_ph_compare$phase=="TRUE"&ip_ph_compare$iphop=="FALSE"]$vOTU))` vOTUs. Using the six methods employed by iPHoP, a total of `r nrow(ip_ph_compare[iphop==TRUE&phase==FALSE])` unique phage-host links, comprised of `r length(unique(ip_ph_compare[ip_ph_compare$phase=="FALSE"&ip_ph_compare$iphop=="TRUE"]$MAG))` MAGs and `r length(unique(ip_ph_compare[ip_ph_compare$phase=="FALSE"&ip_ph_compare$iphop=="TRUE"]$vOTU))` vOTUs, were identified. We also identified `r nrow(ip_ph_compare[iphop==TRUE&phase==TRUE])` unique phage-host links that were identified by both methods (**Figure 5**). These were comprised of `r length(unique(ip_ph_compare[ip_ph_compare$phase=="TRUE"&ip_ph_compare$iphop=="TRUE"]$MAG))` MAGs and `r length(unique(ip_ph_compare[ip_ph_compare$phase=="TRUE"&ip_ph_compare$iphop=="TRUE"]$vOTU))` vOTUs. Of those predictions made specifically by IPHoP, `r nrow(ip_ph_compare[iphop==TRUE&phase==FALSE&method_iphop=="blast"])` are based on blastn and `r nrow(ip_ph_compare[iphop==TRUE&phase==FALSE&method_iphop=="iPHoP-RF"])` are based on a combination of the 6 methods that iPHoP uses (called iPHoP-RF). 
+  
+```{r Fig5, echo = FALSE, message=FALSE, fig.cap='**Figure 5. Venn diagram of phage-host predictions made with the Hi-C and iPHoP methods**', out.height = "800px", out.width='800px'}
+
+knitr::include_graphics("../../data/results/figures/updated_venndiagram_phase_iphop.pdf")
+```
+
+  Of the `r nrow(ip_ph_compare[iphop==FALSE&phase==TRUE])` phage-host predictions made by phase, `r table_df[table_df$prediction == "phase"&table_df$lifestyle=="lysogenic", ]$percent_within_group`% of the pairings were with lysogenic phage, `r table_df[table_df$prediction == "phase"&table_df$lifestyle=="lytic", ]$percent_within_group`% were with lytic phage, and `r table_df[table_df$prediction == "phase"&table_df$lifestyle=="unclear", ]$percent_within_group`% were with phages whose lifestyle was not able to be predicted. Of the `r nrow(ip_ph_compare[iphop==TRUE&phase==FALSE])` phage-host predictions made by iphop, `r table_df[table_df$prediction == "iphop"&table_df$lifestyle=="lysogenic", ]$percent_within_group`% of the pairings were with lysogenic phage, `r table_df[table_df$prediction == "iphop"&table_df$lifestyle=="lytic", ]$percent_within_group`% were with lytic phage, and `r table_df[table_df$prediction == "iphop"&table_df$lifestyle=="unclear", ]$percent_within_group`% were with phages whose lifestyle was not able to be predicted. Of the `r nrow(ip_ph_compare[iphop==TRUE&phase==TRUE])` phage-host predictions made by both phase and iphop, `r table_df[table_df$prediction == "both"&table_df$lifestyle=="lysogenic", ]$percent_within_group`% of the pairings were with lysogenic phage, `r table_df[table_df$prediction == "both"&table_df$lifestyle=="lytic", ]$percent_within_group`% were with lytic phage, and `r table_df[table_df$prediction == "both"&table_df$lifestyle=="unclear", ]$percent_within_group`% were with phages whose lifestyle was not able to be predicted (**Fig. 6**).
+
+  `r paste0("MAGs within the bacteria phyla ", phy_string, " had the highest frequency of being targeted by viruses (", mags_string, " MAGs respectively).")` Host families most often targeted within `r df_filtered[1,1]` include `r fam_string_join(host_fam_count,df_filtered[1,1])[[1]]` (`r fam_string_join(host_fam_count,df_filtered[1,1])[[2]]` MAGs respectively). The host family most often targeted within `r df_filtered[2,1]` is `r fam_string_join(host_fam_count,df_filtered[2,1])[[1]]` (`r fam_string_join(host_fam_count,df_filtered[2,1])[[2]]` MAGs respectively). The host family most often targeted within `r df_filtered[3,1]` is `r fam_string_join(host_fam_count,df_filtered[3,1])[[1]]` (`r fam_string_join(host_fam_count,df_filtered[3,1])[[2]]` MAGs). The host family most often targeted within `r df_filtered[4,1]` is  `r fam_string_join(host_fam_count,df_filtered[4,1])[[1]]` (`r fam_string_join(host_fam_count,df_filtered[4,1])[[2]]` MAGs). The host family most often targeted within `r df_filtered[5,1]` is  `r fam_string_join(host_fam_count,df_filtered[5,1])[[1]]` (`r fam_string_join(host_fam_count,df_filtered[5,1])[[2]]` MAGs).
+
+```{r,include=FALSE}
+# SingleM reps in p-h pairing
+
+#MAG representatives of the singleM indicators
+v_mag_indicator_reps<-fread("../../data/results/tables/mag_motu_indicator_reps_pha.csv")%>%
+  rename("OTU_ID"="sequence")%>%
+  select(OTU_ID,MAG,clean_MAG:species,`Indicator taxa`,vOTU,viral_tax,lifestyle,iphop,phase,host)%>%
+  unique%>%
+  mutate(ph_prediction=case_when(iphop=="TRUE"&phase=="TRUE"~"both",
+                                 iphop=="TRUE"&phase=="FALSE"~"iphop",
+                                 iphop=="FALSE"&phase=="TRUE"~"phase"))%>%
+  select(-iphop,-phase)%>%
+  as.data.frame
+
+v_mag_indicator_reps_agger<- unique(v_mag_indicator_reps[,c("clean_MAG","OTU_ID","Indicator taxa","host")])%>%
+  group_by(clean_MAG)%>%
+  summarise(n_mOTU_ID=n_distinct(OTU_ID),
+            n_indic_taxa=n_distinct(`Indicator taxa`),
+            indic_taxa=paste(unique(`Indicator taxa`),collapse = " - "),
+            n_bat_host=n_distinct(host),
+            bat_host=paste(unique(host),collapse = " - "))
+
+
+indicator_species_mag_count<-unique(v_mag_indicator_reps[,c("clean_MAG","OTU_ID","Indicator taxa","host")])%>%
+  aggregate(cbind(`Indicator taxa`,host)~clean_MAG, function(x)paste(unique(x), collapse = " - "))
+unique(v_mag_indicator_reps[v_mag_indicator_reps$iphop==""])
+
+# Characterizing the taxa of the indicator MAGs
+in_mag_taxa <- unique(v_mag_indicator_reps[, c("MAG", "phylum","host_family","genus")]) %>% 
+  mutate(num_mags=1)%>%
+  aggregate(num_mags ~ phylum+host_family+genus, sum) %>%
+  arrange(desc(num_mags)) 
+
+#Function for genus counting
+gen_string_join<-function(df,phy){
+  phy_select<-df%>%
+    filter(phylum==phy)
+  fam_join<-join_with_and(phy_select$genus)
+  num_join<-join_with_and(phy_select$num_mags)
+  return(list(fam_join,num_join))
+}
+ #Phylum count
+in_mag_phy_count <- unique(v_mag_indicator_reps[, c("MAG", "phylum")]) %>% 
+  mutate(num_mags=1)%>%
+  aggregate(num_mags ~ phylum, sum) %>%
+  arrange(desc(num_mags)) 
+
+gen_string_join(in_mag_taxa,in_mag_phy_count[1,1])
+```
+  
+  Based on the singleM genus-level recovery estimates, we were able to determine that `r round(length(unique(v_mag_indicator_reps$OTU_ID))/sum(ind_sp$total_mOTUs)*100)`% (n=`r length(unique(v_mag_indicator_reps$OTU_ID))`) of the `r sum(ind_sp$total_mOTUs)` mOTU indicator species are represented by `r round(length(unique(v_mag_indicator_reps$MAG))/length(unique(ip_ph_compare$MAG))*100)`% (n=`r length(unique(v_mag_indicator_reps$MAG))`) of the `r length(unique(ip_ph_compare$MAG))` MAGs that were paired to phages (Fig. 6). `r in_mag_phy_count[1,2]` of these MAGs belong to the phylum `r in_mag_phy_count[1,1]` (in the genre `r gen_string_join(in_mag_taxa,in_mag_phy_count[1,1])[[1]]` (`r gen_string_join(in_mag_taxa,in_mag_phy_count[1,1])[[2]]` respectively)), `r in_mag_phy_count[2,2]` belong to the phylum `r in_mag_phy_count[2,1]` (in the genre `r gen_string_join(in_mag_taxa,in_mag_phy_count[2,1])[[1]]` (`r gen_string_join(in_mag_taxa,in_mag_phy_count[2,1])[[2]]` respectively)), and `r in_mag_phy_count[3,2]` belong to the phylum `r in_mag_phy_count[3,1]` (in the genre `r gen_string_join(in_mag_taxa,in_mag_phy_count[3,1])[[1]]` (`r gen_string_join(in_mag_taxa,in_mag_phy_count[3,1])[[2]]` respectively)).
+  
+
+  
+   `r nrow(indicator_species_mag_count[indicator_species_mag_count$host=="Mimon crenulatum",])` MAGs were indicators for _P. hastatus_, `r nrow(indicator_species_mag_count[indicator_species_mag_count$host=="Phyllostomus hastatus",])` were indicators for _M. crenulatum_, and `r nrow(indicator_species_mag_count[indicator_species_mag_count$host=="Mimon crenulatum - Phyllostomus hastatus",])` was an indicator for both _P. hastatus_ and _M. crenulatum_.
+  
+  These `r length(unique(v_mag_indicator_reps$MAG))` indicator MAGs were paired with `r round(length(unique(v_mag_indicator_reps$vOTU))/length(unique(ip_ph_compare$vOTU))*100)`% (n=`r length(unique(v_mag_indicator_reps$vOTU))`) of the `r length(unique(ip_ph_compare$vOTU))` phage paired to host MAGs. `r nrow(unique(v_mag_indicator_reps[, c("MAG", "ph_prediction")])[v_mag_indicator_reps[!duplicated(v_mag_indicator_reps[, c("MAG", "ph_prediction")]), "ph_prediction"] == "phase", ])` phase-host prediction involving indicator MAGs were made with Hi-C, `r nrow(unique(v_mag_indicator_reps[, c("MAG", "ph_prediction")])[v_mag_indicator_reps[!duplicated(v_mag_indicator_reps[, c("MAG", "ph_prediction")]), "ph_prediction"] == "iphop", ])` were made by IPHoP, and `r nrow(unique(v_mag_indicator_reps[, c("MAG", "ph_prediction")])[v_mag_indicator_reps[!duplicated(v_mag_indicator_reps[, c("MAG", "ph_prediction")]), "ph_prediction"] == "both", ])` were made by both the Hi-C and IPHoP methods. `r nrow(unique(v_mag_indicator_reps[,c("vOTU","lifestyle")])[unique(v_mag_indicator_reps[,c("vOTU","lifestyle")])$lifestyle=="lytic",])` of vOTUs matched to indicator MAGs were predicted to be lytic, `r nrow(unique(v_mag_indicator_reps[,c("vOTU","lifestyle")])[unique(v_mag_indicator_reps[,c("vOTU","lifestyle")])$lifestyle=="lysogenic",])` were lysogenic, while the lifestyle of `r nrow(unique(v_mag_indicator_reps[,c("vOTU","lifestyle")])[unique(v_mag_indicator_reps[,c("vOTU","lifestyle")])$lifestyle=="unclear",])` was unable to be predicted.
+  
+  
+  
+```{r Fig6, echo = FALSE, message=FALSE, fig.cap='**Figure 6. Phage-host network analysis.**'}
+
+knitr::include_graphics("../../data/results/figures/phage-host_bat_network_final_04232025.pdf")
+``` 
+
+## AMR Genes
+  We identified a total of **268** unique AMR gene variants within the MAGs and vMAGs across the three bat species. **27** AMR genes were shared between the MAGs and vMAGs.
+  
+### MAG resistome diversity
+  Across the gut MAG associated resistome of the 3 bat species, Macaroline resistance were the most abundant AMR class in both _M. crenulatum_ and _P. discolor_ while Tetracycline were the most abundant in _P. hastatus_. The second most prevalent AMR varied by bat species, with Tertracycline resistance observed in _M. crenulatum_, Glycopeptide resistance observed in _P. discolor_, and Macrolide resistance abserved in _P. hastatus_ (**Fig X**). The most abundant gene associated with Macrolide resistance was abc-f (all three bat species), _mef(B)_ ( _P. hastatus_ ), _erm_ ( _M. crenulatum_ ), and _estT_ ( _M. crenulatum_ and _P. discolor_). Tetracycline resistance was dominated by _tet_ genes ( _tet_, _tetA(46)_, and _tetB(46)_) within all three bat species while _mepA_ was more abundant in both _P. hastatus_ and _P. discolor_. The most predominate genes associated with Glycopeptide resistance was represented _vanR_, _vanS_, _vanH_, and _vanR-B_ in the guts across all three bat species while _vanY-D_ was highly abundant in the guts of _M. crenulatum_ and _P. discolor_.
+  
+  Within the MAGs, a total of **52** AMR genes across **X** AMR classes were unique to _M. crenulatum_, **22** AMR genes across **X** AMR classes were unique to _P. hastatus_, while no AMR genes were found to be unique to _P. discolor_ (**Fig X**). Unique AMR genes within _M. crenulatum_ were within the classes **X,Y,andZ**. The most abundant of these were **A,B,andC**. The **22** AMR genes unique to  _P. hastatus_ were within the classes **X,Y,andZ** with the most predominate genes being **A,B,andC**. Interesting **71** AMR genes (representing **X** classes) were shared between _M. crenulatum_ and _P. hastatus_ while only 3 (representing **X** classes) were shared between _P. discolor_ and _P. hastatus_ and only 2 between (representing **X** classes) _M. crenulatum_ and _P. discolor_. 
+
+### vMAG resistome diversity
+  
+
+# Discussion
+  Our novel study is the first to offer empirical evidence of phage-host interactions in the gut microbiome of bats using metagenomics in conjunction with Hi-C techniques. (**Talk about previous attempts of phage-host studies in bat guts and the methods they used**).
+  
+  (**Need an introduction to this paragraph here that leads to the hypothesis in the following sentence**). Therefore, we hypothesized that the bat gut virome acts as a phage-mediated immune system against pathogenic prokaryotes. In support of this hypothesis, those prokaryotic families that had more frequent pairings with phage were those that contained known pathogenic members. For example, the families `r fam_string_join(host_fam_count,df_filtered[1,1])[[1]]` within the bacteria phylum `r df_filtered[1,1]`, the family `r fam_string_join(host_fam_count,df_filtered[2,1])[[1]]` within the bacteria phylum `r df_filtered[2,1]`, the and family `r fam_string_join(host_fam_count,df_filtered[3,1])[[1]]` within the bacteria phylum `r df_filtered[3,1]` all contain members of known human pathogens (**Citations**). 
+  
+  
+  
+  
+  While the family `r fam_string_join(host_fam_count,df_filtered[4,1])[[1]]` within the bacteria phylum `r df_filtered[4,1]` contain no known pathogenic members, members are associated with the human gut (**Citation**).
+
+
+Macro Eukarotic 
+* (AND) _Iridoviridae_
+* (AND) _Bornaviridae_ 
+* (AND) _Paroviruses_
+Micro Eukarotic 
+* (AND) _Mimiviridae_
+Bacterial phage 
+* (AND) an unclassified family of _Kyanoviridae_ 
+* (AND) _Inoviridae_ 
+* (AND) an unclassified family of _Herelleviridae_
+
+
+# Conclusion
+
+# Acknowledgement
