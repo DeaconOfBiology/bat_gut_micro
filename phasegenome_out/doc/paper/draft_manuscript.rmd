@@ -332,18 +332,24 @@ knitr::include_graphics("../../data/results/figures/phage-host_bat_network_final
   We identified a total of **268** unique AMR gene variants within the MAGs and vMAGs across the three bat species. **27** AMR genes were shared between the MAGs and vMAGs.
   
 ### MAG resistome diversity
-  Across the gut MAG associated resistome of the 3 bat species, Macaroline resistance were the most abundant AMR class in both _M. crenulatum_ and _P. discolor_ while Tetracycline were the most abundant in _P. hastatus_. The second most prevalent AMR varied by bat species, with Tertracycline resistance observed in _M. crenulatum_, Glycopeptide resistance observed in _P. discolor_, and Macrolide resistance abserved in _P. hastatus_ (**Fig X**). The most abundant gene associated with Macrolide resistance was abc-f (all three bat species), _mef(B)_ ( _P. hastatus_ ), _erm_ ( _M. crenulatum_ ), and _estT_ ( _M. crenulatum_ and _P. discolor_). Tetracycline resistance was dominated by _tet_ genes ( _tet_, _tetA(46)_, and _tetB(46)_) within all three bat species while _mepA_ was more abundant in both _P. hastatus_ and _P. discolor_. The most predominate genes associated with Glycopeptide resistance was represented _vanR_, _vanS_, _vanH_, and _vanR-B_ in the guts across all three bat species while _vanY-D_ was highly abundant in the guts of _M. crenulatum_ and _P. discolor_.
+  Across the gut MAG associated resistome of the 3 bat species, Macaroline resistance was the most abundant AMR class in both _M. crenulatum_ and _P. discolor_ while Tetracycline were the most abundant in _P. hastatus_. The second most prevalent AMR varied by bat species, with Tertracycline resistance observed in _M. crenulatum_, Glycopeptide resistance observed in _P. discolor_, and Macrolide resistance abserved in _P. hastatus_ (**Fig X**). The most abundant gene associated with Macrolide resistance was abc-f (all three bat species), _mef(B)_ ( _P. hastatus_ ), _erm_ ( _M. crenulatum_ ), and _estT_ ( _M. crenulatum_ and _P. discolor_). Tetracycline resistance was dominated by _tet_ genes ( _tet_, _tetA(46)_, and _tetB(46)_) within all three bat species while _mepA_ was more abundant in both _P. hastatus_ and _P. discolor_. The most predominate genes associated with Glycopeptide resistance was represented _vanR_, _vanS_, _vanH_, and _vanR-B_ in the guts across all three bat species while _vanY-D_ was highly abundant in the guts of _M. crenulatum_ and _P. discolor_.
   
   Within the MAGs, a total of **52** AMR genes across **X** AMR classes were unique to _M. crenulatum_, **22** AMR genes across **X** AMR classes were unique to _P. hastatus_, while no AMR genes were found to be unique to _P. discolor_ (**Fig X**). Unique AMR genes within _M. crenulatum_ were within the classes **X,Y,andZ**. The most abundant of these were **A,B,andC**. The **22** AMR genes unique to  _P. hastatus_ were within the classes **X,Y,andZ** with the most predominate genes being **A,B,andC**. Interesting **71** AMR genes (representing **X** classes) were shared between _M. crenulatum_ and _P. hastatus_ while only 3 (representing **X** classes) were shared between _P. discolor_ and _P. hastatus_ and only 2 between (representing **X** classes) _M. crenulatum_ and _P. discolor_. 
 
-# ```{r Fig6, echo = FALSE, message=FALSE, fig.cap='**Figure 6. Phage-host network analysis.**'}
-# 
-# knitr::include_graphics("../../data/results/figures/")
-# ``` 
+```{r Fig7, echo = FALSE, message=FALSE, fig.cap='**Figure 7. Venn diagram of MAG associated AMR genes.**'}
+
+knitr::include_graphics("../../data/results/AMR_Venn_diet.pdf")
+```
 
 ### vMAG resistome diversity
+  Within the gut vMAG associated resistome of the 3 bat species, Macaroline resistance was the most abundant AMR class in both _M. crenulatum_ and _P. discolor_. In fact, this was the only class of antimicrobial resistance found within _P. discolor_. The Mupirocin resistance class was the most abundant in _P. hastatus_. The second most prevalent AMR varied between _M. crenulatum_ and _P. hastatus_, with Quinolone resistance observed in _M. crenulatum_ and  Macaroline resistance observed in _P. hastatus_ (**Fig X**). The only AMR gene associated with Macrolide resistance was _abc-f_ (all three bat species). Quinolone resistance was represented by _qnrVC_, _qnrE_, _qnrS_, _qnrA_, and _qnrB_ within _M. crenulatum_ and by qnrD in _P. hastatus_.
   
+  A total of **11** AMR genes across **X** AMR classes were unique to _M. crenulatum_, **5** AMR genes across **X** AMR classes were unique to _P. hastatus_, while no AMR genes were found to be unique to _P. discolor_ (**Fig X**). Unique AMR genes within _M. crenulatum_ were within the classes **X,Y,andZ**. The most abundant of these were **A,B,andC**. The **5** AMR genes unique to  _P. hastatus_ were within the classes **X,Y,andZ** with the most predominate genes being **A,B,andC**. Interesting **7** AMR genes (representing **X** classes) were shared between _M. crenulatum_ and _P. hastatus_ while none were shared between _P. discolor_ and _P. hastatus_ nor between _M. crenulatum_ and _P. discolor_. 
 
+```{r Fig8, echo = FALSE, message=FALSE, fig.cap='**Figure 8. Venn diagram of vMAG associated AMR genes.**'}
+
+knitr::include_graphics("../../data/results/figures/vcon_amr_venn.pdf")
+```
 # Discussion
   Our novel study is the first to offer empirical evidence of phage-host interactions in the gut microbiome of bats using metagenomics in conjunction with Hi-C techniques. (**Talk about previous attempts of phage-host studies in bat guts and the methods they used**).
   
