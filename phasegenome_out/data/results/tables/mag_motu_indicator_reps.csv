@@ -1,0 +1,314 @@
+clean_MAG,MAG,OTU_ID,Indicator taxa,host
+MAG_35,raw-080613-5-ph_rerun_bin_50,mOTU_3231,*(P) Bacillota; (G) Streptococcus*,Phyllostomus hastatus
+MAG_39,raw-080613-5-ph_rerun_bin_56,mOTU_100477,*(P) Bacillota; (G) Abiotrophia*,Phyllostomus hastatus
+MAG_39,raw-080613-5-ph_rerun_bin_56,mOTU_30773,*(P) Bacillota; (G) Abiotrophia*,Phyllostomus hastatus
+MAG_50,raw-080813-7-mc_bin_7,mOTU_164274,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_133262,*(P) Bacillota; (G) Enterococcus_A*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_171684,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_149498,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_140880,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_38808,*(P) Bacillota; (G) Enterococcus_A*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_7555,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_169940,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_6288,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_78347,*(P) Bacillota; (S) Enterococcus_A pallens*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_94932,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_50,raw-080813-7-mc_bin_7,mOTU_143873,*(P) Bacillota; (S) Enterococcus_A ferrettii*,Mimon crenulatum
+MAG_52,raw-080813-7-mc_bin_10,mOTU_139630,*(P) Thermoproteota; (G) FEN-987*,Mimon crenulatum
+MAG_52,raw-080813-7-mc_bin_10,mOTU_77305,*(P) Pseudomonadota; (G) HY038*,Mimon crenulatum
+MAG_52,raw-080813-7-mc_bin_10,mOTU_7972,*(P) Pseudomonadota; (G) HY038*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_168074,*(P) Bacillota; (G) Enterococcus_A*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_100042,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_23258,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_142199,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_176036,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_154613,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_140021,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_139855,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_141556,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_139510,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_82739,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_116026,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_125513,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_38444,*(P) Bacillota; (G) Enterococcus_A*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_112895,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_31164,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_170131,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_78941,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_170170,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_6572,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_97921,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_77440,*(P) Bacillota; (F) Enterococcaceae*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_98740,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_104981,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_48152,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_153611,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_24449,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_19284,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_143800,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_157948,*(P) Bacillota; (S) Enterococcus_A alishanensis*,Mimon crenulatum
+MAG_53,raw-080813-7-mc_bin_11,mOTU_3086,*(P) Bacillota; (F) Enterococcaceae*,Mimon crenulatum
+MAG_54,raw-080813-7-mc_bin_12,mOTU_97936,*(P) Bacillota; (G) Enterococcus*,Mimon crenulatum
+MAG_55,raw-080813-7-mc_bin_13,mOTU_86809,*(P) Bacillota; (S) Enterococcus dunnyi*,Mimon crenulatum
+MAG_55,raw-080813-7-mc_bin_13,mOTU_5026,*(P) Bacillota; (G) Enterococcus*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_108193,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_111526,*(P) Actinomycetota; (S) Corynebacterium mycetoides*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_75115,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_142824,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_72644,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_152962,*(P) Actinomycetota; (G) Tsukamurella*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_148840,*(P) Nanoarchaeota; (F) GW2011-AR1*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_117500,*(P) Halobacteriota; (O) Methanomicrobiales*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_39998,*(P) Actinomycetota; (C) Actinomycetes*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_102601,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_11392,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_59907,*(P) Actinomycetota; (F) Mycobacteriaceae*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_150592,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_32616,*(P) Actinomycetota; (S) Corynebacterium frankenforstense*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_147573,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_87910,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_72226,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_90497,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_173544,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_66586,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_110296,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_145255,*(P) Actinomycetota; (O) Mycobacteriales*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_122815,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_61074,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_51089,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_66887,*(P) Actinomycetota; (O) Mycobacteriales*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_120947,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_9946,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_137449,*(P) Actinomycetota; (S) Corynebacterium nuruki*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_158644,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_56,raw-080813-7-mc_bin_17,mOTU_80383,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_162139,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_128875,*(P) Methanobacteriota_A; (O) Methanococcales*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_125887,*(P) Halobacteriota; (C) Halobacteria*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_174742,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_63389,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_157145,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_6477,*(P) Bacillota; (F) Enterococcaceae*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_77406,*(P) Bacillota; (S) Streptococcus sp001578805*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_57285,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_52101,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_45219,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_60680,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_121900,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_128423,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_157906,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_80907,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_58,raw-080813-7-mc_bin_24,mOTU_3202,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_59,raw-080813-7-mc_bin_25,mOTU_78955,*(P) Bacillota; (G) Lentilactobacillus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_162135,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_130034,*(P) Halobacteriota; (P) Halobacteriota*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_114468,*(P) Halobacteriota; (C) Halobacteria*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_169952,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_174262,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_63379,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_160003,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_55905,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_71723,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_47709,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_45142,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_61,raw-080813-7-mc_bin_27,mOTU_4512,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_67,raw-080913-2_bin_107,mOTU_177263,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_67,raw-080913-2_bin_107,mOTU_110090,*(P) Actinomycetota; (G) Corynebacterium*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_168535,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_77,raw-080913-2_bin_123,mOTU_110775,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_141969,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_176664,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_144739,*(P) Fermentibacterota; (G) Aegiribacteria*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_129535,*(P) Aenigmatarchaeota; (G) JAGGXH01*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_128740,*(P) Thermoproteota; (G) Geocrenenecus*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_129528,*(P) Thermoplasmatota; (G) Halarchaeoplasma*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_155230,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_45340,*(P) Aenigmatarchaeota; (G) QMZS01*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_127589,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_38493,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_102062,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_1814,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_55511,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_43288,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_28586,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_92047,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_25298,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_162487,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_5882,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_6314,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_97369,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_77842,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_47081,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_77,raw-080913-2_bin_123,mOTU_95811,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_54662,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_26756,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_47697,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_24699,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_124411,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_12702,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_77,raw-080913-2_bin_123,mOTU_138753,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_157197,*(P) Bacillota; (C) Bacilli*,Mimon crenulatum
+MAG_77,raw-080913-2_bin_123,mOTU_25871,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_81,raw-080913-2_bin_130,mOTU_112316,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_165756,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_99828,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_70581,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_45603,*(P) Cyanobacteriota; (O) Cyanobacteriales*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_162065,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_140152,*(P) Methanobacteriota_A; (F) Methanocaldococcaceae*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_155682,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_43682,*(P) Thermoproteota; (G) JALURD01*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_115376,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_114468,*(P) Halobacteriota; (C) Halobacteria*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_37710,*(P) Bacillota; (S) Streptococcus sobrinus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_162897,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_1384,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_1411,*(P) Bacillota; (O) Lactobacillales*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_43090,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_31181,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_90445,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_72238,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_160163,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_521,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_50319,*(P) Bacillota; (G) Enterococcus_B*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_77556,*(P) Bacillota; (S) Lysinibacillus sp026012395*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_99190,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_98656,*(P) Bacillota; (O) Lactobacillales*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_96394,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_96607,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_82461,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_46239,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_72327,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_10362,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_135883,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_79736,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_81,raw-080913-2_bin_130,mOTU_16600,*(P) Bacillota; (G) Streptococcus*,Mimon crenulatum
+MAG_82,raw-080913-2_bin_137,mOTU_144740,*(P) Bacillota_A; (G) UBA3738*,Mimon crenulatum
+MAG_82,raw-080913-2_bin_137,mOTU_159961,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_82,raw-080913-2_bin_137,mOTU_42675,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_82,raw-080913-2_bin_137,mOTU_43964,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_82,raw-080913-2_bin_137,mOTU_44031,*(P) Bacillota; (G) Gemella*,Mimon crenulatum
+MAG_86,raw-080913-2_bin_18,mOTU_38444,*(P) Bacillota; (G) Enterococcus_A*,Mimon crenulatum
+MAG_96,raw-080913-2_bin_33,mOTU_139936,*(P) Pseudomonadota; (F) Enterobacteriaceae*,Mimon crenulatum
+MAG_96,raw-080913-2_bin_33,mOTU_81535,*(P) Pseudomonadota; (G) Morganella*,Mimon crenulatum
+MAG_96,raw-080913-2_bin_33,mOTU_78470,*(P) Pseudomonadota; (G) Morganella*,Mimon crenulatum
+MAG_96,raw-080913-2_bin_33,mOTU_80175,*(P) Pseudomonadota; (G) Morganella*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_95503,*(P) Pseudomonadota; (S) HY038 sp014117425*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_113329,*(P) Pseudomonadota; (S) HY038 sp025449335*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_70716,*(P) Pseudomonadota; (S) HY038 sp014117425*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_139409,*(P) Pseudomonadota; (S) HY038 sp014117425*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_139630,*(P) Thermoproteota; (G) FEN-987*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_112641,*(P) Pseudomonadota; (S) HY038 sp014117425*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_77305,*(P) Pseudomonadota; (G) HY038*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_55710,*(P) Pseudomonadota; (G) HY038*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_454,*(P) Pseudomonadota; (G) HY038*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_98578,*(P) Pseudomonadota; (S) HY038 sp014117425*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_30434,*(P) Pseudomonadota; (S) HY038 sp014117425*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_7972,*(P) Pseudomonadota; (G) HY038*,Mimon crenulatum
+MAG_114,raw-080913-2_bin_54,mOTU_138841,*(P) Pseudomonadota; (G) HY038*,Mimon crenulatum
+MAG_132,raw-080913-2_bin_81,mOTU_95060,*(P) Pseudomonadota; (G) Kluyvera*,Mimon crenulatum
+MAG_161,raw-080913-2_rerun_bin_5,mOTU_74994,*(P) Actinomycetota; (F) Streptomycetaceae*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_142720,*(P) Bacillota; (G) Mammaliicoccus*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_175599,*(P) Bacillota; (G) Staphylococcus*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_116429,*(P) Bacillota; (O) Staphylococcales*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_41382,*(P) Bacillota; (S) Staphylococcus gallinarum*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_169803,*(P) Bacillota; (G) Staphylococcus*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_171084,*(P) Bacillota; (G) Staphylococcus*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_255,*(P) Bacillota; (G) Staphylococcus*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_78176,*(P) Bacillota; (G) Staphylococcus*,Mimon crenulatum
+MAG_171,raw-080913-2_rerun_bin_94,mOTU_136476,*(P) Bacillota; (S) Staphylococcus massiliensis*,Mimon crenulatum
+MAG_180,raw-080913-8-1-ph_bin_26,mOTU_61201,*(P) Actinomycetota; (G) Actinomyces*,Phyllostomus hastatus
+MAG_182,raw-080913-8-1-ph_bin_29,mOTU_167904,*(P) Bacillota; (S) Enterococcus faecalis*,Mimon crenulatum
+MAG_182,raw-080913-8-1-ph_bin_29,mOTU_156963,*(P) Bacillota; (S) Enterococcus faecalis*,Mimon crenulatum
+MAG_182,raw-080913-8-1-ph_bin_29,mOTU_160564,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_182,raw-080913-8-1-ph_bin_29,mOTU_79778,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_192,raw-080913-8-1-ph_bin_47,mOTU_112730,*(P) Pseudomonadota; (F) Pasteurellaceae*,Phyllostomus hastatus
+MAG_196,raw-080913-8-1-ph_bin_57,mOTU_106525,*(P) Pseudomonadota; (S) Rodentibacter sp001999335*,Phyllostomus hastatus
+MAG_209,raw-080913-8-1-ph_rerun_bin_12,mOTU_37559,*(P) Pseudomonadota; (S) Lautropia dentalis*,Phyllostomus hastatus
+MAG_212,raw-080913-8-1-ph_rerun_bin_19,mOTU_3086,*(P) Bacillota; (F) Enterococcaceae*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_101366,*(P) Bacillota; (C) Bacilli*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_165474,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_99753,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_81644,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_143403,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_176182,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_20426,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_162259,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_45452,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_141424,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_139994,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_139388,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_139537,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_156107,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_173824,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_115469,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_114833,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_41108,*(P) Bacillota; (C) Bacilli*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_26952,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_2305,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_60151,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_42223,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_41347,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_44564,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_79570,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_93714,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_177087,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_593,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_6349,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_96761,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_77435,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_94376,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_94484,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_54836,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_82592,*(P) Bacillota; (F) Streptococcaceae*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_48301,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_60599,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_115222,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_7912,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_141074,*(P) Bacillota; (C) Bacilli*,Mimon crenulatum
+MAG_219,raw-080913-8-1-ph_rerun_bin_32,mOTU_3109,*(P) Bacillota; (S) Lactococcus lactis*,Mimon crenulatum
+MAG_227,raw-080913-8-1-ph_rerun_bin_49,mOTU_160564,*(P) Bacillota; (G) Lactococcus*,Mimon crenulatum
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_100887,*(P) Bacillota; (S) Gemella palaticanis*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_168535,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_111720,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_141888,*(P) Bacillota; (S) Gemella sp013415425*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_172953,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_76108,*(D) Bacteria*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_161733,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_154775,*(D) Bacteria*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_128590,*(P) Thermoplasmatota; (O) DHVEG-1*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_141208,*(P) Thermoplasmatota; (G) Halarchaeoplasma*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_155210,*(P) Bacillota; (S) Gemella sanguinis*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_36192,*(P) Thermoproteota; (G) HRBIN02*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_44917,*(P) Thermoproteota; (G) Culexmicrobium*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_127506,*(P) Bacillota; (S) Gemella sanguinis*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_39048,*(P) Bacillota; (C) Bacilli*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_101894,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_1667,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_42485,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_28866,*(P) Bacillota; (S) Gemella cuniculi*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_92348,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_23756,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_92886,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_162548,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_5770,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_3865,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_97139,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_47081,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_95975,*(P) Bacillota; (S) Gemella sp013415425*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_59277,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_26562,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_47923,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_47775,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_83493,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_24172,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_124801,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_12702,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_138616,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_157473,*(P) Bacillota; (C) Bacilli*,Phyllostomus hastatus
+MAG_234,raw-080913-8-1-ph_rerun_bin_61,mOTU_25871,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_235,raw-080913-8-1-ph_rerun_bin_63,mOTU_36192,*(P) Thermoproteota; (G) HRBIN02*,Phyllostomus hastatus
+MAG_237,raw-080913-8-1-ph_rerun_bin_71,mOTU_7001,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus
+MAG_237,raw-080913-8-1-ph_rerun_bin_71,mOTU_144757,*(D) Bacteria*,Phyllostomus hastatus
+MAG_237,raw-080913-8-1-ph_rerun_bin_71,mOTU_135673,*(P) Thermoproteota; (G) Geocrenenecus*,Phyllostomus hastatus
+MAG_237,raw-080913-8-1-ph_rerun_bin_71,mOTU_55510,*(P) Bacillota; (G) Gemella*,Phyllostomus hastatus

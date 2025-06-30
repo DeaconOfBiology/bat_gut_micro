@@ -1,0 +1,111 @@
+Indicator taxa,total_mOTUs,Mimon crenulatum,Phyllostomus discolor,Phyllostomus hastatus,median_stat,median_pvalue,se_stat,se_p.value
+*(P) Bacillota; (G) Streptococcus*,132,**9.747**,0,0,0.961,0.039,0.007,0
+*(P) Bacillota; (S) Lactococcus lactis*,38,**9.743**,0.03,0.038,0.962,0.039,0.017,0
+*(P) Bacillota; (G) Lactococcus*,19,**5.817**,0.008,0.02,0.988,0.039,0.027,0
+*(P) Bacillota; (S) Enterococcus_A alishanensis*,27,**2.1**,0,0,0.766,0.039,0.014,0
+*(P) Bacillota; (C) Bacilli*,5,**1.699**,0.008,0.003,0.991,0.039,0.037,0
+*(P) Bacillota; (G) Gemella*,31,**1.181**,0,0.008,0.965,0.039,0.015,0
+*(P) Actinomycetota; (G) Corynebacterium*,31,**0.7**,0,0,0.956,0.039,0.015,0
+*(P) Bacillota; (O) Lactobacillales*,7,**0.643**,0,0,0.988,0.039,0.037,0
+*(P) Bacillota; (S) Lactococcus cremoris*,2,**0.514**,0,0,0.7,0.039,0.02,0
+*(D) Bacteria*,8,**0.426**,0,0,0.867,0.039,0.025,0
+*(P) Pseudomonadota; (G) HY038*,6,**0.415**,0,0,0.889,0.039,0.064,0
+*(P) Bacillota; (F) Streptococcaceae*,1,**0.391**,0,0,0.956,0.039,,
+*(P) Halobacteriota; (C) Halobacteria*,4,**0.318**,0,0,0.916,0.039,0.03,0
+*(P) Bacillota; (S) Lactococcus nasutitermitis*,1,**0.285**,0,0,0.933,0.039,,
+*(D) Archaea*,2,**0.273**,0,0,0.732,0.039,0.005,0
+*(P) Bacillota; (F) Enterococcaceae*,5,**0.244**,0,0.003,0.926,0.039,0.047,0
+*(P) Bacillota; (S) Streptococcus sobrinus*,2,**0.228**,0,0,0.866,0.039,0.06,0
+*(P) Bacillota; (G) Enterococcus_B*,1,**0.22**,0,0,0.965,0.039,,
+*(P) Pseudomonadota; (F) Enterobacteriaceae*,7,**0.216**,0.009,0.005,0.859,0.039,0.036,0
+*(P) Bacillota; (G) Enterococcus_A*,4,**0.207**,0,0,0.848,0.039,0.072,0
+*(P) Thermoproteota; (G) FEN-987*,1,**0.183**,0,0,0.667,0.039,,
+*(P) Bacillota; (S) Enterococcus_A ferrettii*,10,**0.171**,0,0,0.905,0.039,0.027,0
+*(P) Bacillota; (S) Lysinibacillus sp026012395*,1,**0.155**,0,0,0.912,0.039,,
+*(P) Cyanobacteriota; (O) Cyanobacteriales*,2,**0.131**,0,0,0.99,0.039,0.005,0
+*(P) Chloroflexota; (G) UBA11996*,1,**0.11**,0,0,0.895,0.039,,
+*(P) Methanobacteriota_A; (O) Methanococcales*,2,**0.11**,0,0,0.961,0.039,0.034,0
+*(P) Bacillota; (S) Streptococcus sp001578805*,1,**0.106**,0,0,0.996,0.039,,
+*(P) Chloroflexota; (G) JAGWBD01*,1,**0.098**,0,0,0.7,0.039,,
+*(P) Patescibacteria; (G) 2-12-FULL-50-11*,1,**0.098**,0,0,0.814,0.039,,
+*(P) Thermoproteota; (G) JALURD01*,4,**0.098**,0,0,0.905,0.039,0.047,0
+*(P) WOR-3; (O) SM23-42*,1,**0.09**,0,0,0.789,0.039,,
+*(P) Pseudomonadota; (G) Morganella*,3,**0.086**,0.003,0,0.792,0.039,0.056,0
+*(P) Actinomycetota; (O) Mycobacteriales*,3,**0.081**,0,0,0.971,0.039,0.022,0
+*(P) Chloroflexota; (G) GCA-2730555*,1,**0.081**,0,0,0.898,0.039,,
+*(P) Methanobacteriota_A; (F) Methanocaldococcaceae*,2,**0.081**,0,0,0.904,0.039,0.051,0
+*(P) Bacillota; (S) Enterococcus faecalis*,3,**0.078**,0,0.005,0.796,0.039,0.08,0
+*(P) Pseudomonadota; (C) Alphaproteobacteria*,2,**0.077**,0,0,0.861,0.039,0.008,0
+*(P) Pseudomonadota; (G) JALYJG01*,1,**0.077**,0,0,0.719,0.039,,
+*(P) Thermoproteota; (G) JALSQL01*,1,**0.073**,0,0,0.991,0.039,,
+*(P) Nitrospirota; (F) Nitrospiraceae*,1,**0.065**,0,0,0.736,0.039,,
+*(P) Bacillota; (G) Staphylococcus*,5,**0.064**,0,0,0.926,0.039,0.028,0
+*(P) Actinomycetota; (C) Actinomycetes*,3,**0.061**,0,0,0.853,0.039,0.033,0
+*(P) Actinomycetota; (G) Poriferisocius*,1,**0.061**,0,0,0.868,0.039,,
+*(P) Pseudomonadota; (S) HY038 sp014117425*,6,**0.06**,0,0,0.963,0.039,0.017,0
+*(P) Chloroflexota; (F) P2-11E*,1,**0.057**,0,0,0.819,0.039,,
+*(P) Halobacteriota; (P) Halobacteriota*,2,**0.053**,0,0,0.996,0.039,0.005,0
+*(P) Thermoproteota; (G) 40CM-2-53-6*,1,**0.045**,0,0,0.948,0.039,,
+*(P) Bacillota; (G) Enterococcus*,3,**0.044**,0,0,0.853,0.039,0.058,0
+*(P) Thermoproteota; (G) Geocrenenecus*,1,**0.037**,0,0,0.991,0.039,,
+*(P) Actinomycetota; (F) Mycobacteriaceae*,2,**0.036**,0,0,0.986,0.039,0.015,0
+*(P) Halobacteriota; (O) Methanomicrobiales*,1,**0.033**,0,0,1,0.039,,
+*(P) Pseudomonadota; (G) Kluyvera*,2,**0.032**,0,0,0.926,0.039,0.074,0
+*(P) Actinomycetota; (S) Corynebacterium frankenforstense*,1,**0.029**,0,0,0.985,0.039,,
+*(P) Fermentibacterota; (G) Aegiribacteria*,1,**0.029**,0,0,0.753,0.039,,
+*(P) WOR-3; (G) Caldipriscus*,1,**0.029**,0,0,0.753,0.039,,
+*(P) Actinomycetota; (S) Corynebacterium mycetoides*,1,**0.024**,0,0,1,0.039,,
+*(P) Halobacteriota; (G) JAQZDA01*,1,**0.024**,0,0,0.926,0.039,,
+*(P) Aenigmatarchaeota; (G) QMZS01*,1,**0.02**,0,0,0.806,0.039,,
+*(P) Bacillota; (G) Mammaliicoccus*,1,**0.02**,0,0,0.806,0.039,,
+*(P) Actinomycetota; (G) Gordonia*,2,**0.016**,0,0,1,0.039,0,0
+*(P) Actinomycetota; (G) Tsukamurella*,1,**0.016**,0,0,0.853,0.039,,
+*(P) Actinomycetota; (S) Corynebacterium nuruki*,1,**0.016**,0,0,1,0.039,,
+*(P) Bacillota; (G) Lentilactobacillus*,1,**0.016**,0,0,0.853,0.039,,
+*(P) Bacillota; (O) Staphylococcales*,1,**0.016**,0,0,0.853,0.039,,
+*(P) Bacillota; (S) Enterococcus_A pallens*,1,**0.016**,0,0,0.853,0.039,,
+*(P) Bacillota; (S) Staphylococcus gallinarum*,1,**0.016**,0,0,1,0.039,,
+*(P) Thermoplasmatota; (G) Halarchaeoplasma*,1,**0.016**,0,0,1,0.039,,
+*(P) Actinomycetota; (P) Actinomycetota*,1,**0.012**,0,0,0.926,0.039,,
+*(P) Actinomycetota; (S) Gordonia oryzae*,1,**0.012**,0,0,0.926,0.039,,
+*(P) Aenigmatarchaeota; (G) JAGGXH01*,1,**0.012**,0,0,0.926,0.039,,
+*(P) Bacillota; (S) Paucilactobacillus wasatchensis*,1,**0.012**,0,0,0.926,0.039,,
+*(P) Nanoarchaeota; (F) GW2011-AR1*,1,**0.012**,0,0,0.926,0.039,,
+*(P) Pseudomonadota; (S) Morganella morganii*,1,**0.012**,0,0,0.926,0.039,,
+*(P) Actinomycetota; (F) Microbacteriaceae*,1,**0.008**,0,0,1,0.039,,
+*(P) Actinomycetota; (F) Streptomycetaceae*,1,**0.008**,0,0,1,0.039,,
+*(P) Actinomycetota; (O) Actinomycetales*,1,**0.008**,0,0,1,0.039,,
+*(P) Actinomycetota; (S) Mycobacterium sp001666755*,1,**0.008**,0,0,1,0.039,,
+*(P) Bacillota; (F) Staphylococcaceae*,1,**0.008**,0,0,1,0.039,,
+*(P) Bacillota; (S) Enterococcus dunnyi*,1,**0.008**,0,0,1,0.039,,
+*(P) Bacillota; (S) Leuconostoc pseudomesenteroides*,1,**0.008**,0,0,1,0.039,,
+*(P) Bacillota; (S) Staphylococcus massiliensis*,1,**0.008**,0,0,1,0.039,,
+*(P) Bacillota_A; (G) UBA3738*,1,**0.008**,0,0,1,0.039,,
+*(P) Bacillota_I; (G) CALUXS01*,1,**0.008**,0,0,1,0.039,,
+*(P) Pseudomonadota; (S) HY038 sp025449335*,1,**0.008**,0,0,1,0.039,,
+*(P) Actinomycetota; (G) Arachnia*,2,0,**0.028**,0,0.822,0.037,0,0
+*(D) Archaea*,1,0,**0.014**,0,0.945,0.037,,
+*(P) Bacillota; (S) Streptococcus hyointestinalis*,1,0,**0.014**,0,0.822,0.037,,
+*(P) Actinomycetota; (F) Dermatophilaceae*,1,0,**0.011**,0,0.918,0.037,,
+*(P) Actinomycetota; (G) Dietzia*,1,0,**0.011**,0,0.918,0.037,,
+*(P) Actinomycetota; (C) Actinomycetes*,1,0,**0.008**,0,1,0.037,,
+*(P) Bacillota; (G) Gemella*,37,0.167,0,**34.699**,0.962,0.037,0.007,0
+*(P) Bacillota; (S) Gemella sanguinis*,2,0,0,**3.309**,0.978,0.037,0.01,0
+*(P) Bacillota; (C) Bacilli*,2,0,0,**3.192**,0.964,0.037,0.01,0
+*(P) Bacillota; (S) Gemella sp013415425*,2,0,0,**2.844**,0.966,0.037,0.001,0
+*(D) Bacteria*,3,0,0,**2.101**,0.946,0.037,0.016,0
+*(P) Bacillota; (S) Gemella cuniculi*,1,0,0,**1.649**,0.951,0.037,,
+*(P) Bacillota; (S) Gemella palaticanis*,1,0,0,**1.633**,0.991,0.037,,
+*(P) Thermoproteota; (G) HRBIN02*,2,0,0,**1.271**,0.982,0.037,0.018,0
+*(P) Thermoplasmatota; (O) DHVEG-1*,1,0,0,**0.981**,0.974,0.037,,
+*(P) Thermoplasmatota; (G) Halarchaeoplasma*,1,0,0,**0.657**,0.974,0.037,,
+*(P) Thermoproteota; (G) Culexmicrobium*,1,0,0,**0.378**,0.963,0.037,,
+*(P) Pseudomonadota; (S) Rodentibacter sp001999335*,1,0,0,**0.057**,0.849,0.037,,
+*(P) Bacillota; (G) Streptococcus*,2,0,0.005,**0.038**,0.899,0.04,0.046,0.003
+*(P) Pseudomonadota; (O) Enterobacterales*,1,0,0,**0.024**,0.949,0.037,,
+*(P) Thermoproteota; (G) Geocrenenecus*,1,0,0,**0.024**,0.949,0.037,,
+*(P) Bacillota; (G) Abiotrophia*,2,0,0,**0.019**,0.959,0.037,0.041,0
+*(P) Actinomycetota; (G) Actinomyces*,1,0,0,**0.014**,0.945,0.037,,
+*(P) Bacillota; (G) Staphylococcus*,1,0,0,**0.014**,0.945,0.037,,
+*(P) Pseudomonadota; (F) Pasteurellaceae*,1,0,0,**0.011**,0.918,0.037,,
+*(P) Pseudomonadota; (S) Lautropia dentalis*,1,0,0,**0.008**,1,0.037,,

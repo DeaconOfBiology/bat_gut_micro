@@ -1,0 +1,12 @@
+gene,class,subclass,species
+estDL136,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,Mimon crenulatum
+qnrA,QUINOLONE,QUINOLONE,Mimon crenulatum
+qnrB,QUINOLONE,QUINOLONE,Mimon crenulatum
+qnrE,QUINOLONE,QUINOLONE,Mimon crenulatum
+qnrS,QUINOLONE,QUINOLONE,Mimon crenulatum
+qnrVC,QUINOLONE,QUINOLONE,Mimon crenulatum
+rph,RIFAMYCIN,RIFAMYCIN,Mimon crenulatum
+vat,STREPTOGRAMIN,STREPTOGRAMIN,Mimon crenulatum
+dfrA,TRIMETHOPRIM,TRIMETHOPRIM,Mimon crenulatum
+dfrA3,TRIMETHOPRIM,TRIMETHOPRIM,Mimon crenulatum
+vanY-D,GLYCOPEPTIDE,VANCOMYCIN,Mimon crenulatum

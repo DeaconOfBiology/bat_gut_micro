@@ -1,0 +1,13 @@
+#### config.yaml
+```yaml
+# List of sample IDs matching subdirectories in data/
+samples:
+  - sampleA
+  - sampleB
+  - sampleC
+
+# Path to HiCBin scripts
+dirs:
+  hicbin: "/path/to/hicbin"
+  merge_bins: "/path/to/merge_bins.py"
+```  
