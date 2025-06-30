@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{booktabs}
+\begin{document}
+\begin{table}[!t]
+\caption*{
+{\large \textbf{Table 1: Relative abundance of Indicator taxa across bat host species.} Microbial indicator species are denoted in bold print under corresponding bat species.}
+} 
+\fontsize{12.0pt}{14.4pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrr}
+\toprule
+ & \multicolumn{3}{c}{Percent Relative Abundance} & \multicolumn{2}{c}{Group-equalized index stats} \\ 
+\cmidrule(lr){2-4} \cmidrule(lr){5-6}
+<b>Indicator taxa</b> & <b><i>Mimon crenulatum</i></b> & <b><i>Phyllostomus discolor</i></b> & <b><i>Phyllostomus hastatus</i></b> & <b><i>r<sub>g</sub></i></b> & <b><i>p-value</i></b> \\ 
+\midrule\addlinespace[2.5pt]
+\emph{(O) Myxococcales} & \textbf{0.01} & 0.04 & 0 & 0.9 & 0.04 \\ 
+\emph{(P) Bdellovibrionota} & \textbf{0.03} & 0.09 & 0 & 0.89 & 0.03 \\ 
+\emph{(F) Casimicrobiaceae} & 0 & \textbf{0.09} & 0 & 0.93 & 0.03 \\ 
+\emph{(C) Terriglobia} & 0.01 & \textbf{0.16} & 0.01 & 0.9 & 0.02 \\ 
+\emph{(S) Serratia ureilytica} & 0 & \textbf{1.33} & 0.01 & 0.79 & 0.03 \\ 
+\emph{(G) Fusobacterium} & 0 & 0 & \textbf{0.02} & 1 & 0.03 \\ 
+\emph{(S) Gemella sanguinis} & 0 & 0 & \textbf{9.63} & 0.97 & 0.03 \\ 
+\emph{(G) Gemella} & 1.85 & 0 & \textbf{54.65} & 0.96 & 0.03 \\ 
+\emph{(S) Gemella haemolysans\_C} & 0 & 0 & \textbf{3.64} & 0.95 & 0.03 \\ 
+\emph{(O) Bacillales\_H} & 0 & 0 & \textbf{0.01} & 0.94 & 0.03 \\ 
+\emph{(G) Abiotrophia} & 0 & 0 & \textbf{0.2} & 0.93 & 0.03 \\ 
+\emph{(F) Aerococcaceae} & 0.01 & 0 & \textbf{0.04} & 0.89 & 0.03 \\ 
+\emph{(S) Actinomyces capricornis} & 0 & 0.11 & \textbf{0.08} & 0.87 & 0.03 \\ 
+\emph{(O) Bacillales\_D} & 0 & 0 & \textbf{0.01} & 0.85 & 0.03 \\ 
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\end{document}

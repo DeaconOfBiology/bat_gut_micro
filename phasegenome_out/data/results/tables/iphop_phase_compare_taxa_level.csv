@@ -1,0 +1,198 @@
+domain,phylum,host_family,viral_tax,vgroup,lifestyle,num_votu,num_mags,iphop,phase,Prediction
+Bacteria,Verrucomicrobiota,Akkermansiaceae,Caudoviricetes; Unclassified order,vgroup_13,lysogenic,1,1,FALSE,TRUE,phase
+Bacteria,Verrucomicrobiota,Akkermansiaceae,Unclassified,vgroup_14,lysogenic,1,1,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Pseudonocardiaceae,Caudoviricetes; Unclassified order,vgroup_157,lysogenic,1,1,FALSE,TRUE,phase
+Bacteria,Planctomycetota,Thermoguttaceae,Caudoviricetes; Unclassified order,vgroup_189,lysogenic,1,1,TRUE,TRUE,both
+Bacteria,Deinococcota,Trueperaceae,Caudoviricetes; Unclassified order,vgroup_191,lysogenic,1,1,FALSE,TRUE,phase
+Bacteria,Desulfobacterota,UBA2174_A,Caudoviricetes; Unclassified order,vgroup_194,lysogenic,1,1,FALSE,TRUE,phase
+Bacteria,Pseudomonadota,Burkholderiaceae_A,Unclassified,vgroup_32,lysogenic,1,1,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,CAG-74,Caudoviricetes; Unclassified order,vgroup_33,lysogenic,1,1,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Clostridiaceae,Caudoviricetes; Unclassified order,vgroup_39,lysogenic,1,1,TRUE,FALSE,iphop
+Bacteria,Desulfobacterota,Desulfobulbaceae,Unclassified,vgroup_50,lysogenic,1,1,TRUE,FALSE,iphop
+Bacteria,Bacillota,Erysipelotrichaceae,Unclassified,vgroup_80,lysogenic,1,1,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Acetobacteraceae,Unclassified,vgroup_1,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Bacillota,Lactobacillales; Unclassified family,Unclassified,vgroup_111,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,MGBC116941,Caudoviricetes; Unclassified order,vgroup_112,lytic,1,1,FALSE,TRUE,phase
+Bacteria,Bacillota,Aerococcaceae,Unclassified,vgroup_12,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Antricoccaceae,Unclassified,vgroup_16,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Rhodocyclaceae,Unclassified,vgroup_161,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Streptosporangiaceae,Caudoviricetes; Unclassified order,vgroup_188,lytic,1,1,FALSE,TRUE,phase
+Bacteria,Deinococcota,Trueperaceae,Herelleviridae; Unclassified family,vgroup_193,lytic,1,1,FALSE,TRUE,phase
+Bacteria,Pseudomonadota,Burkholderiaceae,Caudoviricetes; Unclassified order,vgroup_28,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Burkholderiaceae,Unclassified,vgroup_30,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Clostridiaceae,Caudoviricetes; Unclassified order,vgroup_40,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Dermabacteraceae,Unclassified,vgroup_43,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Desulfobacterota,Desulfobulbaceae,Caudoviricetes; Unclassified order,vgroup_49,lytic,1,1,FALSE,TRUE,phase
+Bacteria,Bacillota,Aerococcaceae,Caudoviricetes; Unclassified order,vgroup_dub_548,lytic,1,1,TRUE,FALSE,iphop
+Bacteria,Verrucomicrobiota,Akkermansiaceae,Unclassified,vgroup_15,unclear,1,1,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,CAG-74,Caudoviricetes; Unclassified order,vgroup_35,unclear,1,1,TRUE,TRUE,both
+Bacteria,Bacteroidota,Dysgonomonadaceae,Caudoviricetes; Unclassified order,vgroup_62,unclear,1,1,FALSE,TRUE,phase
+Bacteria,Pseudomonadota,Pseudomonadaceae,Caudoviricetes; Unclassified order,vgroup_156,lytic,12,1,TRUE,TRUE,both
+Bacteria,Pseudomonadota,Beijerinckiaceae,Caudoviricetes; Unclassified order,vgroup_17,lysogenic,2,1,FALSE,TRUE,phase
+Bacteria,Chloroflexota,UBA6265,Caudoviricetes; Unclassified order,vgroup_195,lysogenic,2,1,FALSE,TRUE,phase
+Bacteria,Pseudomonadota,Burkholderiaceae,Unclassified,vgroup_29,lysogenic,2,1,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Dermabacteraceae,Caudoviricetes; Unclassified order,vgroup_41,lysogenic,2,1,TRUE,TRUE,both
+Bacteria,Actinomycetota,Jatrophihabitantaceae,Caudoviricetes; Unclassified order,vgroup_101,lytic,2,1,TRUE,TRUE,both
+Bacteria,Planctomycetota,Thermoguttaceae,Caudoviricetes; Unclassified order,vgroup_190,lytic,2,1,FALSE,TRUE,phase
+Bacteria,Bacillota_A,CAG-74,Caudoviricetes; Unclassified order,vgroup_34,lytic,2,1,TRUE,TRUE,both
+Bacteria,Desulfobacterota,Desulfobulbaceae,Unclassified,vgroup_51,lytic,2,1,TRUE,FALSE,iphop
+Bacteria,Bacteroidota,Dysgonomonadaceae,Caudoviricetes; Unclassified order,vgroup_61,lytic,2,1,FALSE,TRUE,phase
+Bacteria,Bacillota,Aerococcaceae,Unclassified,vgroup_11,lysogenic,3,1,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Beijerinckiaceae,Caudoviricetes; Unclassified order,vgroup_18,lytic,3,1,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Dermabacteraceae,Caudoviricetes; Unclassified order,vgroup_42,lytic,3,1,TRUE,TRUE,both
+Bacteria,Chloroflexota,UBA6265,Caudoviricetes; Unclassified order,vgroup_196,lytic,4,1,TRUE,TRUE,both
+Bacteria,Pseudomonadota,Burkholderiaceae_A,Caudoviricetes; Unclassified order,vgroup_31,lytic,4,1,TRUE,TRUE,both
+Bacteria,Bacillota_A,Acutalibacteraceae,Caudoviricetes; Unclassified order,vgroup_7,lytic,5,1,TRUE,TRUE,both
+Bacteria,Deinococcota,Trueperaceae,Caudoviricetes; Unclassified order,vgroup_192,lytic,8,1,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Nocardioidaceae,Autographiviridae; Unclassified family,vgroup_137,lytic,1,10,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Nocardioidaceae,Caudoviricetes; Unclassified order,vgroup_140,unclear,1,10,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Nocardioidaceae,Caudoviricetes; Unclassified order,vgroup_139,lytic,19,10,TRUE,TRUE,both
+Bacteria,Actinomycetota,Nocardioidaceae,Unclassified,vgroup_141,lytic,3,10,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Nocardioidaceae,Caudoviricetes; Unclassified order,vgroup_138,lysogenic,4,10,TRUE,TRUE,both
+Bacteria,Bacillota,Enterococcaceae,Caudoviricetes; Unclassified order,vgroup_dub_195,lysogenic,1,15,TRUE,FALSE,iphop
+Bacteria,Bacillota,Enterococcaceae,Phycodnaviridae,vgroup_75,lytic,1,15,TRUE,FALSE,iphop
+Bacteria,Bacillota,Enterococcaceae,Caudoviricetes; Unclassified order,vgroup_dub_533,lytic,1,15,TRUE,FALSE,iphop
+Bacteria,Bacillota,Enterococcaceae,Unclassified,vgroup_78,lytic,16,15,TRUE,FALSE,iphop
+Bacteria,Bacillota,Enterococcaceae,Herelleviridae; Unclassified family,vgroup_74,lytic,2,15,TRUE,FALSE,iphop
+Bacteria,Bacillota,Enterococcaceae,Rountreeviridae; Unclassified family,vgroup_76,lytic,2,15,TRUE,TRUE,both
+Bacteria,Bacillota,Enterococcaceae,Caudoviricetes; Unclassified order,vgroup_71,lysogenic,23,15,TRUE,TRUE,both
+Bacteria,Bacillota,Enterococcaceae,Unclassified,vgroup_77,lysogenic,23,15,TRUE,FALSE,iphop
+Bacteria,Bacillota,Enterococcaceae,Caudoviricetes; Unclassified order,vgroup_73,unclear,3,15,TRUE,TRUE,both
+Bacteria,Bacillota,Enterococcaceae,Unclassified,vgroup_79,unclear,3,15,TRUE,FALSE,iphop
+Bacteria,Bacillota,Enterococcaceae,Caudoviricetes; Unclassified order,vgroup_72,lytic,74,15,TRUE,TRUE,both
+Bacteria,Actinomycetota,Micromonosporaceae,Caudoviricetes; Unclassified order,vgroup_120,lysogenic,1,2,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Nakamurellaceae,Caudoviricetes; Unclassified order,vgroup_132,lysogenic,1,2,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Nakamurellaceae,Unclassified,vgroup_135,lysogenic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Beutenbergiaceae,Caudoviricetes; Unclassified order,vgroup_19,lysogenic,1,2,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Beutenbergiaceae,Unclassified,vgroup_21,lysogenic,1,2,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Christensenellaceae,Caudoviricetes; Unclassified order,vgroup_36,lysogenic,1,2,FALSE,TRUE,phase
+Bacteria,Bacillota_A,Christensenellaceae,Unclassified,vgroup_38,lysogenic,1,2,TRUE,FALSE,iphop
+Bacteria,Desulfobacterota,Adiutricaceae,Caudoviricetes; Unclassified order,vgroup_8,lysogenic,1,2,FALSE,TRUE,phase
+Archaea,Thermoproteota,JANJXX01; Unclassified order; Unclassified family,Mimiviridae,vgroup_98,lysogenic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Nakamurellaceae,Unclassified,vgroup_dub_163,lysogenic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Geodermatophilaceae,Caudoviricetes; Unclassified order,vgroup_dub_226,lysogenic,1,2,TRUE,FALSE,iphop
+Archaea,Methanobacteriota,Methanobacteriaceae,Caudoviricetes; Unclassified order,vgroup_113,lytic,1,2,TRUE,FALSE,iphop
+Archaea,Methanobacteriota,Methanobacteriaceae,Mimiviridae,vgroup_114,lytic,1,2,TRUE,FALSE,iphop
+Archaea,Methanobacteriota,Methanobacteriaceae,Unclassified,vgroup_115,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Micromonosporaceae,Unclassified,vgroup_123,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Nakamurellaceae,Unclassified,vgroup_136,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Pasteurellaceae,Kyanoviridae; Unclassified family,vgroup_144,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Pasteurellaceae,Unclassified,vgroup_146,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Rhizobiaceae,Kyanoviridae; Unclassified family,vgroup_158,lytic,1,2,TRUE,FALSE,iphop
+Archaea,Thermoproteota,JANJXX01; Unclassified order; Unclassified family,Phycodnaviridae,vgroup_99,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Streptomycetaceae,Caudoviricetes; Unclassified order,vgroup_dub_572,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Micromonosporaceae,Caudoviricetes; Unclassified order,vgroup_dub_595,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Micromonosporaceae,Caudoviricetes; Unclassified order,vgroup_dub_780,lytic,1,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Nakamurellaceae,Caudoviricetes; Unclassified order,vgroup_dub_780,lytic,1,2,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Micromonosporaceae,Caudoviricetes; Unclassified order,vgroup_122,unclear,1,2,FALSE,TRUE,phase
+Bacteria,Pseudomonadota,Pasteurellaceae,Unclassified,vgroup_145,lysogenic,2,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Streptomycetaceae,Unclassified,vgroup_187,lysogenic,2,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Geodermatophilaceae,Caudoviricetes; Unclassified order,vgroup_91,lysogenic,2,2,TRUE,TRUE,both
+Archaea,Thermoproteota,JANJXX01; Unclassified order; Unclassified family,Caudoviricetes; Unclassified order,vgroup_96,lysogenic,2,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Beutenbergiaceae,Caudoviricetes; Unclassified order,vgroup_20,lytic,2,2,FALSE,TRUE,phase
+Bacteria,Desulfobacterota,Adiutricaceae,Caudoviricetes; Unclassified order,vgroup_9,lytic,2,2,TRUE,TRUE,both
+Bacteria,Actinomycetota,Nakamurellaceae,Caudoviricetes; Unclassified order,vgroup_133,lytic,3,2,TRUE,TRUE,both
+Bacteria,Actinomycetota,Streptomycetaceae,Caudoviricetes; Unclassified order,vgroup_186,lytic,3,2,TRUE,TRUE,both
+Bacteria,Pseudomonadota,Pasteurellaceae,Caudoviricetes; Unclassified order,vgroup_142,lysogenic,4,2,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Rhizobiaceae,Unclassified,vgroup_159,lysogenic,4,2,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Micromonosporaceae,Caudoviricetes; Unclassified order,vgroup_121,lytic,4,2,TRUE,TRUE,both
+Bacteria,Pseudomonadota,Xanthomonadaceae,Caudoviricetes; Unclassified order,vgroup_197,lytic,4,2,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Geodermatophilaceae,Caudoviricetes; Unclassified order,vgroup_92,lytic,4,2,FALSE,TRUE,phase
+Archaea,Thermoproteota,JANJXX01; Unclassified order; Unclassified family,Caudoviricetes; Unclassified order,vgroup_97,lytic,4,2,TRUE,TRUE,both
+Archaea,Thermoproteota,JANJXX01; Unclassified order; Unclassified family,Unclassified,vgroup_100,lytic,40,2,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Pasteurellaceae,Caudoviricetes; Unclassified order,vgroup_143,lytic,6,2,TRUE,TRUE,both
+Bacteria,Pseudomonadota,Rhizobiaceae,Unclassified,vgroup_160,lytic,6,2,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Christensenellaceae,Caudoviricetes; Unclassified order,vgroup_37,lytic,8,2,TRUE,TRUE,both
+Bacteria,Actinomycetota,Mycobacteriaceae,Caudoviricetes; Unclassified order,vgroup_dub_571,lytic,1,20,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Mycobacteriaceae,Caudoviricetes; Unclassified order,vgroup_dub_572,lytic,1,20,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Mycobacteriaceae,Caudoviricetes; Unclassified order,vgroup_126,lysogenic,15,20,TRUE,TRUE,both
+Bacteria,Actinomycetota,Mycobacteriaceae,Caudoviricetes; Unclassified order,vgroup_127,lytic,30,20,TRUE,TRUE,both
+Bacteria,Actinomycetota,Mycobacteriaceae,Unclassified,vgroup_129,lysogenic,4,20,TRUE,TRUE,both
+Bacteria,Actinomycetota,Mycobacteriaceae,Caudoviricetes; Unclassified order,vgroup_128,unclear,4,20,TRUE,TRUE,both
+Bacteria,Actinomycetota,Mycobacteriaceae,Unclassified,vgroup_130,lytic,5,20,TRUE,TRUE,both
+Bacteria,Actinomycetota,Solirubrobacteraceae,Caudoviricetes; Unclassified order,vgroup_167,lysogenic,1,3,FALSE,TRUE,phase
+Bacteria,Bacillota_A,Eubacteriaceae,Caudoviricetes; Unclassified order,vgroup_81,lysogenic,1,3,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Eubacteriaceae,Unclassified,vgroup_83,lysogenic,1,3,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Peptostreptococcaceae,Kyanoviridae; Unclassified family,vgroup_150,lytic,1,3,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Peptostreptococcaceae,Unclassified,vgroup_151,lytic,1,3,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Peptostreptococcaceae,Caudoviricetes; Unclassified order,vgroup_dub_864,lytic,1,3,FALSE,TRUE,phase
+Bacteria,Bacillota_A,Peptostreptococcaceae,Caudoviricetes; Unclassified order,vgroup_149,unclear,1,3,FALSE,TRUE,phase
+Bacteria,Bacillota_A,Lachnospiraceae,Unclassified,vgroup_103,lysogenic,4,3,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Lachnospiraceae,Unclassified,vgroup_104,lytic,4,3,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Lachnospiraceae,Caudoviricetes; Unclassified order,vgroup_102,lytic,5,3,TRUE,TRUE,both
+Bacteria,Actinomycetota,Solirubrobacteraceae,Caudoviricetes; Unclassified order,vgroup_168,lytic,5,3,FALSE,TRUE,phase
+Bacteria,Bacillota_A,Eubacteriaceae,Caudoviricetes; Unclassified order,vgroup_82,lytic,5,3,TRUE,TRUE,both
+Bacteria,Bacillota_A,Peptostreptococcaceae,Caudoviricetes; Unclassified order,vgroup_148,lytic,9,3,TRUE,TRUE,both
+Bacteria,Bacillota_A,Ruminococcaceae,Caudoviricetes; Unclassified order,vgroup_162,lysogenic,1,4,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Brevibacteriaceae,Unclassified,vgroup_26,lysogenic,1,4,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Ruminococcaceae,Phycodnaviridae,vgroup_164,lytic,1,4,FALSE,TRUE,phase
+Bacteria,Bacillota_A,Ruminococcaceae,Unclassified,vgroup_166,lytic,1,4,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Brevibacteriaceae,Fuselloviridae; Unclassified kingdom,vgroup_25,lytic,1,4,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Brevibacteriaceae,Unclassified,vgroup_27,lytic,1,4,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Brevibacteriaceae,Caudoviricetes; Unclassified order,vgroup_dub_571,lytic,1,4,TRUE,FALSE,iphop
+Bacteria,Bacillota_A,Ruminococcaceae,Caudoviricetes; Unclassified order,vgroup_163,lytic,10,4,TRUE,TRUE,both
+Bacteria,Actinomycetota,Microbacteriaceae,Caudoviricetes; Unclassified order,vgroup_116,lysogenic,2,4,TRUE,TRUE,both
+Bacteria,Bacillota_A,Ruminococcaceae,Unclassified,vgroup_165,lysogenic,2,4,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Brevibacteriaceae,Caudoviricetes; Unclassified order,vgroup_23,lysogenic,4,4,TRUE,TRUE,both
+Bacteria,Actinomycetota,Microbacteriaceae,Caudoviricetes; Unclassified order,vgroup_117,lytic,5,4,TRUE,TRUE,both
+Bacteria,Actinomycetota,Brevibacteriaceae,Caudoviricetes; Unclassified order,vgroup_24,lytic,6,4,TRUE,TRUE,both
+Bacteria,Actinomycetota,JAAYBP01,Caudoviricetes; Unclassified order,vgroup_93,lysogenic,1,5,TRUE,TRUE,both
+Bacteria,Bacillota,Gemellaceae,Demerecviridae; Unclassified family,vgroup_87,lytic,1,5,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,JAAYBP01,Unclassified,vgroup_95,lytic,1,5,TRUE,FALSE,iphop
+Bacteria,Bacillota,Gemellaceae,Caudoviricetes; Unclassified order,vgroup_dub_548,lytic,1,5,TRUE,TRUE,both
+Bacteria,Bacillota,Lactobacillaceae,Unclassified,vgroup_110,unclear,1,5,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,JAAYBP01,Caudoviricetes; Unclassified order,vgroup_94,lytic,10,5,TRUE,TRUE,both
+Bacteria,Bacillota,Gemellaceae,Caudoviricetes; Unclassified order,vgroup_85,lysogenic,12,5,TRUE,TRUE,both
+Bacteria,Bacillota,Gemellaceae,Caudoviricetes; Unclassified order,vgroup_86,lytic,19,5,TRUE,TRUE,both
+Bacteria,Bacillota,Lactobacillaceae,Caudoviricetes; Unclassified order,vgroup_107,unclear,2,5,FALSE,TRUE,phase
+Bacteria,Bacillota,Lactobacillaceae,Caudoviricetes; Unclassified order,vgroup_106,lytic,20,5,TRUE,TRUE,both
+Bacteria,Bacillota,Lactobacillaceae,Caudoviricetes; Unclassified order,vgroup_105,lysogenic,3,5,TRUE,TRUE,both
+Bacteria,Bacillota,Lactobacillaceae,Unclassified,vgroup_108,lysogenic,3,5,TRUE,FALSE,iphop
+Bacteria,Bacillota,Gemellaceae,Unclassified,vgroup_88,lysogenic,3,5,TRUE,TRUE,both
+Bacteria,Bacillota,Lactobacillaceae,Unclassified,vgroup_109,lytic,3,5,TRUE,FALSE,iphop
+Bacteria,Bacillota,Gemellaceae,Unclassified,vgroup_89,lytic,4,5,TRUE,FALSE,iphop
+Bacteria,Bacillota,Staphylococcaceae,Herelleviridae; Unclassified family,vgroup_172,lysogenic,1,6,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Actinomycetaceae,Unclassified,vgroup_dub_163,lysogenic,1,6,TRUE,FALSE,iphop
+Bacteria,Bacillota,Staphylococcaceae,Mimiviridae,vgroup_173,lytic,1,6,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Enterobacteriaceae,Peduoviridae; Unclassified family,vgroup_67,lytic,1,6,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Enterobacteriaceae,Caudoviricetes; Unclassified order,vgroup_dub_864,lytic,1,6,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Actinomycetaceae,Caudoviricetes; Unclassified order,vgroup_4,unclear,1,6,FALSE,TRUE,phase
+Bacteria,Pseudomonadota,Enterobacteriaceae,Caudoviricetes; Unclassified order,vgroup_64,lysogenic,12,6,TRUE,TRUE,both
+Bacteria,Actinomycetota,Actinomycetaceae,Caudoviricetes; Unclassified order,vgroup_3,lytic,16,6,TRUE,TRUE,both
+Bacteria,Bacillota,Staphylococcaceae,Unclassified,vgroup_174,lysogenic,2,6,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Actinomycetaceae,Unclassified,vgroup_6,lysogenic,2,6,TRUE,FALSE,iphop
+Bacteria,Bacillota,Staphylococcaceae,Caudoviricetes; Unclassified order,vgroup_171,unclear,2,6,TRUE,TRUE,both
+Bacteria,Actinomycetota,Actinomycetaceae,Caudoviricetes; Unclassified order,vgroup_2,lysogenic,3,6,TRUE,TRUE,both
+Bacteria,Pseudomonadota,Enterobacteriaceae,Caudoviricetes; Unclassified order,vgroup_66,unclear,3,6,TRUE,TRUE,both
+Bacteria,Bacillota,Staphylococcaceae,Caudoviricetes; Unclassified order,vgroup_170,lytic,33,6,TRUE,TRUE,both
+Bacteria,Pseudomonadota,Enterobacteriaceae,Caudoviricetes; Unclassified order,vgroup_65,lytic,34,6,TRUE,TRUE,both
+Bacteria,Bacillota,Staphylococcaceae,Caudoviricetes; Unclassified order,vgroup_169,lysogenic,7,6,TRUE,TRUE,both
+Bacteria,Bacillota,Staphylococcaceae,Unclassified,vgroup_175,lytic,8,6,TRUE,FALSE,iphop
+Bacteria,Pseudomonadota,Enterobacteriaceae,Unclassified,vgroup_68,lysogenic,9,6,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Propionibacteriaceae,Unclassified,vgroup_155,lytic,1,8,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Propionibacteriaceae,Caudoviricetes; Unclassified order,vgroup_154,unclear,1,8,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Propionibacteriaceae,Caudoviricetes; Unclassified order,vgroup_153,lytic,15,8,TRUE,TRUE,both
+Bacteria,Actinomycetota,Propionibacteriaceae,Caudoviricetes; Unclassified order,vgroup_152,lysogenic,5,8,TRUE,TRUE,both
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Autographiviridae; Unclassified family,vgroup_52,lysogenic,1,9,FALSE,TRUE,phase
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Kyanoviridae; Unclassified family,vgroup_57,lysogenic,1,9,TRUE,FALSE,iphop
+Bacteria,Bacillota,Streptococcaceae,Caudoviricetes; Unclassified order,vgroup_dub_195,lysogenic,1,9,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Dermatophilaceae,Caudoviricetes; Unclassified order,vgroup_dub_226,lysogenic,1,9,TRUE,FALSE,iphop
+Bacteria,Bacillota,Streptococcaceae,Iridoviridae,vgroup_181,lytic,1,9,TRUE,FALSE,iphop
+Bacteria,Actinomycetota,Dermatophilaceae,Unclassified,vgroup_48,lytic,1,9,TRUE,FALSE,iphop
+Bacteria,Bacillota,Streptococcaceae,Caudoviricetes; Unclassified order,vgroup_dub_533,lytic,1,9,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Dermatophilaceae,Caudoviricetes; Unclassified order,vgroup_dub_595,lytic,1,9,FALSE,TRUE,phase
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Caudoviricetes; Unclassified order,vgroup_dub_864,lytic,1,9,FALSE,TRUE,phase
+Bacteria,Bacillota,Streptococcaceae,Unclassified,vgroup_184,unclear,1,9,TRUE,FALSE,iphop
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Unclassified,vgroup_60,unclear,1,9,TRUE,FALSE,iphop
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Unclassified,vgroup_59,lytic,10,9,TRUE,FALSE,iphop
+Bacteria,Bacillota,Streptococcaceae,Caudoviricetes; Unclassified order,vgroup_180,unclear,12,9,TRUE,TRUE,both
+Bacteria,Actinomycetota,Dermatophilaceae,Caudoviricetes; Unclassified order,vgroup_47,lytic,16,9,TRUE,TRUE,both
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Caudoviricetes; Unclassified order,vgroup_55,lytic,17,9,TRUE,TRUE,both
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Unclassified,vgroup_58,lysogenic,2,9,TRUE,FALSE,iphop
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Caudoviricetes; Unclassified order,vgroup_56,unclear,2,9,FALSE,TRUE,phase
+Bacteria,Actinomycetota,Dermatophilaceae,Caudoviricetes; Unclassified order,vgroup_46,lysogenic,3,9,TRUE,TRUE,both
+Bacteria,Bacillota,Streptococcaceae,Caudoviricetes; Unclassified order,vgroup_178,lysogenic,33,9,TRUE,TRUE,both
+Bacteria,Bacillota,Streptococcaceae,Caudoviricetes; Unclassified order,vgroup_179,lytic,65,9,TRUE,TRUE,both
+Bacteria,Bacillota,Streptococcaceae,Unclassified,vgroup_182,lysogenic,7,9,TRUE,FALSE,iphop
+Bacteria,Desulfobacterota,Desulfovibrionaceae,Caudoviricetes; Unclassified order,vgroup_54,lysogenic,7,9,TRUE,TRUE,both
+Bacteria,Bacillota,Streptococcaceae,Unclassified,vgroup_183,lytic,9,9,TRUE,FALSE,iphop
