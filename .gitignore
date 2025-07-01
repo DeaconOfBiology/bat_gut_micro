@@ -15,3 +15,4 @@ phasegenome_out/data/results/cazy_results/*
 phasegenome_out/bin/*
 #Files to ignore
 phasegenome_out/raw-080613-5-ph_all_files.tar.gz
+nothing
