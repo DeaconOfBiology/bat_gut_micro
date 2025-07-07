@@ -4,6 +4,7 @@ str8_analysis/*
 titan_project/*
 tj_notebook/*
 data/*
+final_annotation_summary.tsv
 phasegenome_out/data/processed/*
 phasegenome_out/data/raw/*
 phasegenome_out/data/references/*

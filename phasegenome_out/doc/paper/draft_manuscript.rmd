@@ -115,7 +115,7 @@ rel_abun_phy<-readRDS("../../data/results/singleM__rarefied_phy.rds")
   knitr::include_graphics("../../data/results/figures/new_singlem_dbrda.pdf")
 ```
 
-
+F
 
 ```{r,include=FALSE}
 #Calculating relative abundance of phylum
@@ -323,10 +323,10 @@ gen_string_join(in_mag_taxa,in_mag_phy_count[1,1])
   
   
   
-```{r Fig6, echo = FALSE, message=FALSE, fig.cap='**Figure 6. Phage-host network analysis.**'}
-
-knitr::include_graphics("../../data/results/figures/phage-host_bat_network_final_04232025.pdf")
-``` 
+# ```{r Fig6, echo = FALSE, message=FALSE, fig.cap='**Figure 6. Phage-host network analysis.**'}
+# 
+# knitr::include_graphics("../../data/results/figures/phage-host_bat_network_final_04232025.pdf")
+# ``` 
 
 ## AMR Genes
   We identified a total of **268** unique AMR gene variants within the MAGs and vMAGs across the three bat species. **27** AMR genes were shared between the MAGs and vMAGs.
